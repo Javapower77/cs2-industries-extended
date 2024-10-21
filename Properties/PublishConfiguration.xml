@@ -31,15 +31,17 @@ Also there are several Cargo Train Stations to get your trains transport specifi
   <Screenshot Value="Properties/Previews/Screenshot10.jpg" />
   <Tag Value="Code Mod" />
   <ForumLink Value="" />
-  <ModVersion Value="1.6" />
+  <ModVersion Value="1.7" />
   <GameVersion Value="1.1.*" />
     <Dependency Id="78903" />
 	<Dependency Id="75426" />	<!-- I18n EveryWhere -->
 	<Dependency Id="79634" />	<!-- Asset Icon Library -->
 	<ChangeLog>
-## Patch 1.6
-* Added a Paper Factory.
+## Patch 1.7
+* Upload source code to github.
+* No updates and/or news to the mod itself.
 * Still not final version, working in adding more assets.
   </ChangeLog>
   <ExternalLink Type="discord" Url="https://discord.gg/UkKAfRqfCn" />
+  <ExternalLink Type="github" Url="https://github.com/Javapower77/cs2-boosted-manufacturing-buidings" />
 </Publish>

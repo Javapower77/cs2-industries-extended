@@ -10,7 +10,7 @@ namespace BoostedManufacturingBuidingsAssetPack
     public class Mod : IMod
     {
         public static string Name = "Boosted Manufacturing Buildings";
-        public static string Version = "1.6.0";
+        public static string Version = "1.7.0";
         public static string Author = "Javapower";
         public static string uiHostName = "javapower-boostedfactories";
 
