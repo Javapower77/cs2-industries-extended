@@ -1,0 +1,16 @@
+{
+  "Assets.NAME[Timber Factory]": "Timber Factory",
+  "Assets.DESCRIPTION[Timber Factory]": "This a factory to produce only Timber. Need Forestry Areas first in order to start the manufacturing",
+  "Assets.NAME[Forestry Boosted Factories]": "Forestry Area Placeholder for Boosted Factories",
+  "Assets.DESCRIPTION[Forestry Boosted Factories]": "Boosted forestry area that will gather more amount of woods.",
+  "Assets.NAME[Furniture Factory]": "Furniture Factory",
+  "Assets.DESCRIPTION[Furniture Factory]": "This a factory to produce only Furniture. Need Timber goods first in order to start the manufacturing",
+  "Assets.NAME[Cargo Train Station for Forestry Manufacturing]": "Cargo Train Station for Forestry Manufacturing",
+  "Assets.DESCRIPTION[Cargo Train Station for Forestry Manufacturing]": "This cargo train station support to transport only Wood, Timber, Paper and Furniture",
+  "Assets.NAME[Cargo Train Station for Ore Manufacturing]": "Cargo Train Station for Ore Manufacturing",
+  "Assets.DESCRIPTION[Cargo Train Station for Ore Manufacturing]": "This cargo train station support to transport only Steel, Metal, Mineral and Concrete",
+  "Assets.NAME[Paper Factory]": "Paper Factory",
+  "Assets.DESCRIPTION[Paper Factory]": "This a factory to produce only Paper. Need Timber goods first in order to start the manufacturing"
+}
+
+
