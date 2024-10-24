@@ -6,7 +6,7 @@
     "components": {
         "$id": 1,
         "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
-        "$rlength": 9,
+        "$rlength": 11,
         "$rcontent": [
             {
                 "$id": 2,
@@ -88,7 +88,6 @@
                 "m_Group": $fstrref:"UnityGUID:bf9d9a4d7e119a8469b068587e222a82",
                 "m_Priority": 25,
                 "m_Icon": "coui://javapower-boostedfactories/Forestry Boosted Factories.png",
-                "m_LargeIcon": "",
                 "m_IsDebugObject": false
             },
             {
@@ -182,17 +181,46 @@
                             "$id": 22,
                             "$type": "20|Game.Prefabs.ResourceProductionInfo, Game",
                             "m_Resource": 7,
-                            "m_ProductionRate": 0,
-                            "m_StorageCapacity": 0
+                            "m_ProductionRate": 15000,
+                            "m_StorageCapacity": 60000
                         }
                     ]
                 }
+            },
+            {
+                "$id": 23,
+                "$type": "21|Game.Prefabs.InitialResources, Game",
+                "name": "InitialResources",
+                "active": true,
+                "m_InitialResources": {
+                    "$id": 24,
+                    "$type": "22|Game.Prefabs.InitialResourceItem[], Game",
+                    "$rlength": 1,
+                    "$rcontent": [
+                        {
+                            "$id": 25,
+                            "$type": "23|Game.Prefabs.InitialResourceItem, Game",
+                            "m_Value": {
+                                "$type": "24|Game.Prefabs.ResourceStackInEditor, Game",
+                                "m_Resource": 8,
+                                "m_Amount": 10000000
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "$id": 26,
+                "$type": "25|Game.Prefabs.Effects.SelectedSound, Game",
+                "name": "SelectedSound",
+                "active": true,
+                "m_SelectedSound": $fstrref:"UnityGUID:e56b77208dd68f54fbe6f589ef1c14ee"
             }
         ]
     },
     "m_Meshes": {
-        "$id": 23,
-        "$type": "21|Game.Prefabs.ObjectMeshInfo[], Game",
+        "$id": 27,
+        "$type": "26|Game.Prefabs.ObjectMeshInfo[], Game",
         "$rlength": 0,
         "$rcontent": [
         ]

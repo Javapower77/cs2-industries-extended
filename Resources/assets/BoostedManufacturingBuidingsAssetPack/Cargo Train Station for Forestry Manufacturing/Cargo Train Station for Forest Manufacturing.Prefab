@@ -40,6 +40,7 @@
                 "name": "Workplace",
                 "active": true,
                 "m_Workplaces": 16,
+                "m_MinimumWorkersLimit": 0,
                 "m_Complexity": 1,
                 "m_EveningShiftProbability": 0.25,
                 "m_NightShiftProbability": 0.125
@@ -65,7 +66,7 @@
                 "m_TrainRefuelTypes": 0,
                 "m_WatercraftRefuelTypes": 0,
                 "m_AircraftRefuelTypes": 0,
-                "m_LoadingFactor": 0,
+                "m_LoadingFactor": 5,
                 "m_TransportInterval": {
                     "$type": "8|Unity.Mathematics.int2, Unity.Mathematics",
                     "x": 100,
@@ -80,7 +81,7 @@
                 "m_SubObjects": {
                     "$id": 9,
                     "$type": "10|Game.Prefabs.ObjectSubObjectInfo[], Game",
-                    "$rlength": 154,
+                    "$rlength": 152,
                     "$rcontent": [
                         {
                             "$id": 10,
@@ -3709,54 +3710,6 @@
                         {
                             "$id": 161,
                             "$type": 11,
-                            "m_Object": $fstrref:"CID:a0fe286286c93ddee184880e801d8395",
-                            "m_Position": {
-                                "$type": 12,
-                                "x": 90,
-                                "y": 0,
-                                "z": 0
-                            },
-                            "m_Rotation": {
-                                "$type": 13,
-                                "value": {
-                                    "$type": 14,
-                                    "x": 0,
-                                    "y": 0.707106769,
-                                    "z": 0,
-                                    "w": 0.707106769
-                                }
-                            },
-                            "m_ParentMesh": 0,
-                            "m_GroupIndex": 0,
-                            "m_Probability": 70
-                        },
-                        {
-                            "$id": 162,
-                            "$type": 11,
-                            "m_Object": $fstrref:"CID:71448610c9168c94ee7772b4f69bde6c",
-                            "m_Position": {
-                                "$type": 12,
-                                "x": 75.07031,
-                                "y": 0,
-                                "z": 0
-                            },
-                            "m_Rotation": {
-                                "$type": 13,
-                                "value": {
-                                    "$type": 14,
-                                    "x": 0,
-                                    "y": 0.707106769,
-                                    "z": 0,
-                                    "w": 0.707106769
-                                }
-                            },
-                            "m_ParentMesh": 0,
-                            "m_GroupIndex": 0,
-                            "m_Probability": 70
-                        },
-                        {
-                            "$id": 163,
-                            "$type": 11,
                             "m_Object": $fstrref:"UnityGUID:fb12f0c19e758cb4db1e43d2b845d7f5",
                             "m_Position": {
                                 "$type": 12,
@@ -3782,12 +3735,12 @@
                 }
             },
             {
-                "$id": 164,
+                "$id": 162,
                 "$type": "15|Game.Prefabs.Unlockable, Game",
                 "name": "Unlockable",
                 "active": true,
                 "m_RequireAll": {
-                    "$id": 165,
+                    "$id": 163,
                     "$type": "16|Game.Prefabs.PrefabBase[], Game",
                     "$rlength": 4,
                     "$rcontent": [
@@ -3798,7 +3751,7 @@
                     ]
                 },
                 "m_RequireAny": {
-                    "$id": 166,
+                    "$id": 164,
                     "$type": 16,
                     "$rlength": 0,
                     "$rcontent": [
@@ -3807,7 +3760,7 @@
                 "m_IgnoreDependencies": true
             },
             {
-                "$id": 167,
+                "$id": 165,
                 "$type": "17|Game.Prefabs.Pollution, Game",
                 "name": "Pollution",
                 "active": true,
@@ -3817,19 +3770,19 @@
                 "m_ScaleWithRenters": true
             },
             {
-                "$id": 168,
+                "$id": 166,
                 "$type": "18|Game.Prefabs.StorageLimit, Game",
                 "name": "StorageLimit",
                 "active": true,
                 "storageLimit": 40000000
             },
             {
-                "$id": 169,
+                "$id": 167,
                 "$type": "19|Game.Prefabs.CityServiceBuilding, Game",
                 "name": "CityServiceBuilding",
                 "active": true,
                 "m_Upkeeps": {
-                    "$id": 170,
+                    "$id": 168,
                     "$type": "20|Game.Prefabs.ServiceUpkeepItem[], Game",
                     "$rlength": 0,
                     "$rcontent": [
@@ -3837,34 +3790,33 @@
                 }
             },
             {
-                "$id": 171,
+                "$id": 169,
                 "$type": "21|Game.Prefabs.UIObject, Game",
                 "name": "UIObject",
                 "active": true,
                 "m_Group": $fstrref:"UnityGUID:1239dee54354f354dbc47d2e5d5ead47",
                 "m_Priority": 22,
                 "m_Icon": "coui://javapower-boostedfactories/CargoTrainStationForestry.png",
-                "m_LargeIcon": "",
                 "m_IsDebugObject": false
             },
             {
-                "$id": 172,
+                "$id": 170,
                 "$type": "22|Game.Prefabs.ObsoleteIdentifiers, Game",
                 "name": "ObsoleteIdentifiers",
                 "active": true,
                 "m_PrefabIdentifiers": {
-                    "$id": 173,
+                    "$id": 171,
                     "$type": "23|Game.Prefabs.PrefabIdentifierInfo[], Game",
                     "$rlength": 2,
                     "$rcontent": [
                         {
-                            "$id": 174,
+                            "$id": 172,
                             "$type": "24|Game.Prefabs.PrefabIdentifierInfo, Game",
                             "m_Name": "Cargo_Train_Terminal_Small_Coal_TO2",
                             "m_Type": "BuildingPrefab"
                         },
                         {
-                            "$id": 175,
+                            "$id": 173,
                             "$type": 24,
                             "m_Name": "Train Coal Yard",
                             "m_Type": "BuildingPrefab"
@@ -3873,17 +3825,17 @@
                 }
             },
             {
-                "$id": 176,
+                "$id": 174,
                 "$type": "25|Game.Prefabs.EffectSource, Game",
                 "name": "EffectSource",
                 "active": true,
                 "m_Effects": {
-                    "$id": 177,
+                    "$id": 175,
                     "$type": "26|System.Collections.Generic.List`1[[Game.Prefabs.EffectSource+EffectSettings, Game]], mscorlib",
                     "$rlength": 6,
                     "$rcontent": [
                         {
-                            "$id": 178,
+                            "$id": 176,
                             "$type": "27|Game.Prefabs.EffectSource+EffectSettings, Game",
                             "m_Effect": $fstrref:"UnityGUID:fe92774cd742d9a498ef6f49560d5ab1",
                             "m_PositionOffset": {
@@ -3913,7 +3865,7 @@
                             "m_AnimationIndex": -1
                         },
                         {
-                            "$id": 179,
+                            "$id": 177,
                             "$type": 27,
                             "m_Effect": $fstrref:"UnityGUID:3d37303779fc8e94f9e366a39e10ed6a",
                             "m_PositionOffset": {
@@ -3943,7 +3895,7 @@
                             "m_AnimationIndex": -1
                         },
                         {
-                            "$id": 180,
+                            "$id": 178,
                             "$type": 27,
                             "m_Effect": $fstrref:"UnityGUID:3d37303779fc8e94f9e366a39e10ed6a",
                             "m_PositionOffset": {
@@ -3973,7 +3925,7 @@
                             "m_AnimationIndex": -1
                         },
                         {
-                            "$id": 181,
+                            "$id": 179,
                             "$type": 27,
                             "m_Effect": $fstrref:"UnityGUID:3d37303779fc8e94f9e366a39e10ed6a",
                             "m_PositionOffset": {
@@ -4003,7 +3955,7 @@
                             "m_AnimationIndex": -1
                         },
                         {
-                            "$id": 182,
+                            "$id": 180,
                             "$type": 27,
                             "m_Effect": $fstrref:"UnityGUID:3d37303779fc8e94f9e366a39e10ed6a",
                             "m_PositionOffset": {
@@ -4033,7 +3985,7 @@
                             "m_AnimationIndex": -1
                         },
                         {
-                            "$id": 183,
+                            "$id": 181,
                             "$type": 27,
                             "m_Effect": $fstrref:"UnityGUID:f07ae7855fdd2714788a8a350ab97f61",
                             "m_PositionOffset": {
@@ -4065,7 +4017,7 @@
                     ]
                 },
                 "m_AnimationCurves": {
-                    "$id": 184,
+                    "$id": 182,
                     "$type": "28|System.Collections.Generic.List`1[[Game.Prefabs.EffectSource+AnimationProperties, Game]], mscorlib",
                     "$rlength": 0,
                     "$rcontent": [
@@ -4073,18 +4025,18 @@
                 }
             },
             {
-                "$id": 185,
+                "$id": 183,
                 "$type": "29|Game.Prefabs.ObjectSubNets, Game",
                 "name": "ObjectSubNets",
                 "active": true,
                 "m_InvertWhen": 1,
                 "m_SubNets": {
-                    "$id": 186,
+                    "$id": 184,
                     "$type": "30|Game.Prefabs.ObjectSubNetInfo[], Game",
                     "$rlength": 25,
                     "$rcontent": [
                         {
-                            "$id": 187,
+                            "$id": 185,
                             "$type": "31|Game.Prefabs.ObjectSubNetInfo, Game",
                             "m_NetPrefab": $fstrref:"UnityGUID:934ebd9cc66c40041bc631f0c53821d0",
                             "m_BezierCurve": {
@@ -4125,7 +4077,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 188,
+                                "$id": 186,
                                 "$type": "33|Game.Prefabs.NetPieceRequirements[], Game",
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4133,7 +4085,7 @@
                             }
                         },
                         {
-                            "$id": 189,
+                            "$id": 187,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:934ebd9cc66c40041bc631f0c53821d0",
                             "m_BezierCurve": {
@@ -4174,7 +4126,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 190,
+                                "$id": 188,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4182,7 +4134,7 @@
                             }
                         },
                         {
-                            "$id": 191,
+                            "$id": 189,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:934ebd9cc66c40041bc631f0c53821d0",
                             "m_BezierCurve": {
@@ -4223,7 +4175,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 192,
+                                "$id": 190,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4231,7 +4183,7 @@
                             }
                         },
                         {
-                            "$id": 193,
+                            "$id": 191,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:fc13e17f4200e9746bcc718b53c11c40",
                             "m_BezierCurve": {
@@ -4272,7 +4224,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 194,
+                                "$id": 192,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4280,7 +4232,7 @@
                             }
                         },
                         {
-                            "$id": 195,
+                            "$id": 193,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:934ebd9cc66c40041bc631f0c53821d0",
                             "m_BezierCurve": {
@@ -4321,7 +4273,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 196,
+                                "$id": 194,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4329,7 +4281,7 @@
                             }
                         },
                         {
-                            "$id": 197,
+                            "$id": 195,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:c8fefc7ffe1a8a74fadb20536baed81c",
                             "m_BezierCurve": {
@@ -4370,7 +4322,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 198,
+                                "$id": 196,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4378,7 +4330,7 @@
                             }
                         },
                         {
-                            "$id": 199,
+                            "$id": 197,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:c8fefc7ffe1a8a74fadb20536baed81c",
                             "m_BezierCurve": {
@@ -4419,7 +4371,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 200,
+                                "$id": 198,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4427,7 +4379,7 @@
                             }
                         },
                         {
-                            "$id": 201,
+                            "$id": 199,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:c8fefc7ffe1a8a74fadb20536baed81c",
                             "m_BezierCurve": {
@@ -4468,7 +4420,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 202,
+                                "$id": 200,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4476,7 +4428,7 @@
                             }
                         },
                         {
-                            "$id": 203,
+                            "$id": 201,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:934ebd9cc66c40041bc631f0c53821d0",
                             "m_BezierCurve": {
@@ -4517,7 +4469,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 204,
+                                "$id": 202,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4525,7 +4477,7 @@
                             }
                         },
                         {
-                            "$id": 205,
+                            "$id": 203,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:54aa39404a85cc74cbe22cea747b59c6",
                             "m_BezierCurve": {
@@ -4566,7 +4518,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 206,
+                                "$id": 204,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4574,7 +4526,7 @@
                             }
                         },
                         {
-                            "$id": 207,
+                            "$id": 205,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:fc13e17f4200e9746bcc718b53c11c40",
                             "m_BezierCurve": {
@@ -4615,7 +4567,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 208,
+                                "$id": 206,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4623,7 +4575,7 @@
                             }
                         },
                         {
-                            "$id": 209,
+                            "$id": 207,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:fc13e17f4200e9746bcc718b53c11c40",
                             "m_BezierCurve": {
@@ -4664,7 +4616,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 210,
+                                "$id": 208,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4672,7 +4624,7 @@
                             }
                         },
                         {
-                            "$id": 211,
+                            "$id": 209,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:fc13e17f4200e9746bcc718b53c11c40",
                             "m_BezierCurve": {
@@ -4713,7 +4665,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 212,
+                                "$id": 210,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4721,7 +4673,7 @@
                             }
                         },
                         {
-                            "$id": 213,
+                            "$id": 211,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:fc13e17f4200e9746bcc718b53c11c40",
                             "m_BezierCurve": {
@@ -4762,7 +4714,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 214,
+                                "$id": 212,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4770,7 +4722,7 @@
                             }
                         },
                         {
-                            "$id": 215,
+                            "$id": 213,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:c8fefc7ffe1a8a74fadb20536baed81c",
                             "m_BezierCurve": {
@@ -4811,7 +4763,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 216,
+                                "$id": 214,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4819,7 +4771,7 @@
                             }
                         },
                         {
-                            "$id": 217,
+                            "$id": 215,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:c8fefc7ffe1a8a74fadb20536baed81c",
                             "m_BezierCurve": {
@@ -4860,7 +4812,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 218,
+                                "$id": 216,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4868,7 +4820,7 @@
                             }
                         },
                         {
-                            "$id": 219,
+                            "$id": 217,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:fc13e17f4200e9746bcc718b53c11c40",
                             "m_BezierCurve": {
@@ -4909,7 +4861,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 220,
+                                "$id": 218,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4917,7 +4869,7 @@
                             }
                         },
                         {
-                            "$id": 221,
+                            "$id": 219,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:fc13e17f4200e9746bcc718b53c11c40",
                             "m_BezierCurve": {
@@ -4958,7 +4910,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 222,
+                                "$id": 220,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -4966,7 +4918,7 @@
                             }
                         },
                         {
-                            "$id": 223,
+                            "$id": 221,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:fc13e17f4200e9746bcc718b53c11c40",
                             "m_BezierCurve": {
@@ -5007,7 +4959,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 224,
+                                "$id": 222,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -5015,7 +4967,7 @@
                             }
                         },
                         {
-                            "$id": 225,
+                            "$id": 223,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:54aa39404a85cc74cbe22cea747b59c6",
                             "m_BezierCurve": {
@@ -5056,7 +5008,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 226,
+                                "$id": 224,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -5064,7 +5016,7 @@
                             }
                         },
                         {
-                            "$id": 227,
+                            "$id": 225,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:54aa39404a85cc74cbe22cea747b59c6",
                             "m_BezierCurve": {
@@ -5105,7 +5057,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 228,
+                                "$id": 226,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -5113,7 +5065,7 @@
                             }
                         },
                         {
-                            "$id": 229,
+                            "$id": 227,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:5421f235787cfbc4b97b1585f520fd91",
                             "m_BezierCurve": {
@@ -5154,7 +5106,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 230,
+                                "$id": 228,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -5162,7 +5114,7 @@
                             }
                         },
                         {
-                            "$id": 231,
+                            "$id": 229,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:5421f235787cfbc4b97b1585f520fd91",
                             "m_BezierCurve": {
@@ -5203,7 +5155,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 232,
+                                "$id": 230,
                                 "$type": 33,
                                 "$rlength": 0,
                                 "$rcontent": [
@@ -5211,7 +5163,7 @@
                             }
                         },
                         {
-                            "$id": 233,
+                            "$id": 231,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:54aa39404a85cc74cbe22cea747b59c6",
                             "m_BezierCurve": {
@@ -5252,7 +5204,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 234,
+                                "$id": 232,
                                 "$type": 33,
                                 "$rlength": 1,
                                 "$rcontent": [
@@ -5261,7 +5213,7 @@
                             }
                         },
                         {
-                            "$id": 235,
+                            "$id": 233,
                             "$type": 31,
                             "m_NetPrefab": $fstrref:"UnityGUID:54aa39404a85cc74cbe22cea747b59c6",
                             "m_BezierCurve": {
@@ -5302,7 +5254,7 @@
                                 "y": -1
                             },
                             "m_Upgrades": {
-                                "$id": 236,
+                                "$id": 234,
                                 "$type": 33,
                                 "$rlength": 1,
                                 "$rcontent": [
@@ -5314,21 +5266,21 @@
                 }
             },
             {
-                "$id": 237,
+                "$id": 235,
                 "$type": "34|Game.Prefabs.ObjectSubAreas, Game",
                 "name": "ObjectSubAreas",
                 "active": true,
                 "m_SubAreas": {
-                    "$id": 238,
+                    "$id": 236,
                     "$type": "35|Game.Prefabs.ObjectSubAreaInfo[], Game",
                     "$rlength": 5,
                     "$rcontent": [
                         {
-                            "$id": 239,
+                            "$id": 237,
                             "$type": "36|Game.Prefabs.ObjectSubAreaInfo, Game",
                             "m_AreaPrefab": $fstrref:"UnityGUID:eb0c6cfabb61428468ef54336829d021",
                             "m_NodePositions": {
-                                "$id": 240,
+                                "$id": 238,
                                 "$type": "37|Unity.Mathematics.float3[], Unity.Mathematics",
                                 "$rlength": 4,
                                 "$rcontent": [
@@ -5359,7 +5311,7 @@
                                 ]
                             },
                             "m_ParentMeshes": {
-                                "$id": 241,
+                                "$id": 239,
                                 "$type": "38|System.Int32[], mscorlib",
                                 "$plength": 0,
                                 "$pcontent": [
@@ -5367,11 +5319,11 @@
                             }
                         },
                         {
-                            "$id": 242,
+                            "$id": 240,
                             "$type": 36,
                             "m_AreaPrefab": $fstrref:"UnityGUID:f1feb094a83e7de45863812e2db1a39d",
                             "m_NodePositions": {
-                                "$id": 243,
+                                "$id": 241,
                                 "$type": 37,
                                 "$rlength": 10,
                                 "$rcontent": [
@@ -5438,7 +5390,7 @@
                                 ]
                             },
                             "m_ParentMeshes": {
-                                "$id": 244,
+                                "$id": 242,
                                 "$type": 38,
                                 "$plength": 0,
                                 "$pcontent": [
@@ -5446,11 +5398,11 @@
                             }
                         },
                         {
-                            "$id": 245,
+                            "$id": 243,
                             "$type": 36,
                             "m_AreaPrefab": $fstrref:"UnityGUID:430d3a6a5dbdafc448ca69340fe06172",
                             "m_NodePositions": {
-                                "$id": 246,
+                                "$id": 244,
                                 "$type": 37,
                                 "$rlength": 7,
                                 "$rcontent": [
@@ -5499,7 +5451,7 @@
                                 ]
                             },
                             "m_ParentMeshes": {
-                                "$id": 247,
+                                "$id": 245,
                                 "$type": 38,
                                 "$plength": 0,
                                 "$pcontent": [
@@ -5507,11 +5459,11 @@
                             }
                         },
                         {
-                            "$id": 248,
+                            "$id": 246,
                             "$type": 36,
                             "m_AreaPrefab": $fstrref:"UnityGUID:cf94ed2336736854a929b0e5895adaf5",
                             "m_NodePositions": {
-                                "$id": 249,
+                                "$id": 247,
                                 "$type": 37,
                                 "$rlength": 4,
                                 "$rcontent": [
@@ -5542,7 +5494,7 @@
                                 ]
                             },
                             "m_ParentMeshes": {
-                                "$id": 250,
+                                "$id": 248,
                                 "$type": 38,
                                 "$plength": 4,
                                 "$pcontent": [
@@ -5554,11 +5506,11 @@
                             }
                         },
                         {
-                            "$id": 251,
+                            "$id": 249,
                             "$type": 36,
                             "m_AreaPrefab": $fstrref:"UnityGUID:cf94ed2336736854a929b0e5895adaf5",
                             "m_NodePositions": {
-                                "$id": 252,
+                                "$id": 250,
                                 "$type": 37,
                                 "$rlength": 4,
                                 "$rcontent": [
@@ -5589,7 +5541,7 @@
                                 ]
                             },
                             "m_ParentMeshes": {
-                                "$id": 253,
+                                "$id": 251,
                                 "$type": 38,
                                 "$plength": 0,
                                 "$pcontent": [
@@ -5600,12 +5552,12 @@
                 }
             },
             {
-                "$id": 254,
+                "$id": 252,
                 "$type": "39|Game.Prefabs.UnlockOnBuild, Game",
                 "name": "UnlockOnBuild",
                 "active": true,
                 "m_Unlocks": {
-                    "$id": 255,
+                    "$id": 253,
                     "$type": "40|Game.Prefabs.ObjectBuiltRequirementPrefab[], Game",
                     "$rlength": 1,
                     "$rcontent": [
@@ -5614,7 +5566,7 @@
                 }
             },
             {
-                "$id": 256,
+                "$id": 254,
                 "$type": "41|Game.Prefabs.BuildingTerraformOverride, Game",
                 "name": "BuildingTerraformOverride",
                 "active": true,
@@ -5660,7 +5612,7 @@
                 },
                 "m_HeightOffset": 0,
                 "m_AdditionalSmoothAreas": {
-                    "$id": 257,
+                    "$id": 255,
                     "$type": "43|Game.Prefabs.BuildingTerraformOverride+SubLot[], Game",
                     "$rlength": 0,
                     "$rcontent": [
@@ -5670,17 +5622,17 @@
                 "m_DontLower": false
             },
             {
-                "$id": 258,
+                "$id": 256,
                 "$type": "44|Game.Prefabs.ObjectSubLanes, Game",
                 "name": "ObjectSubLanes",
                 "active": true,
                 "m_SubLanes": {
-                    "$id": 259,
+                    "$id": 257,
                     "$type": "45|Game.Prefabs.ObjectSubLaneInfo[], Game",
                     "$rlength": 54,
                     "$rcontent": [
                         {
-                            "$id": 260,
+                            "$id": 258,
                             "$type": "46|Game.Prefabs.ObjectSubLaneInfo, Game",
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -5722,7 +5674,7 @@
                             }
                         },
                         {
-                            "$id": 261,
+                            "$id": 259,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -5764,7 +5716,7 @@
                             }
                         },
                         {
-                            "$id": 262,
+                            "$id": 260,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -5806,7 +5758,7 @@
                             }
                         },
                         {
-                            "$id": 263,
+                            "$id": 261,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -5848,7 +5800,7 @@
                             }
                         },
                         {
-                            "$id": 264,
+                            "$id": 262,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:b5570aa6d1b74e349850499d5a709319",
                             "m_BezierCurve": {
@@ -5890,7 +5842,7 @@
                             }
                         },
                         {
-                            "$id": 265,
+                            "$id": 263,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:b5570aa6d1b74e349850499d5a709319",
                             "m_BezierCurve": {
@@ -5932,7 +5884,7 @@
                             }
                         },
                         {
-                            "$id": 266,
+                            "$id": 264,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:b5570aa6d1b74e349850499d5a709319",
                             "m_BezierCurve": {
@@ -5974,7 +5926,7 @@
                             }
                         },
                         {
-                            "$id": 267,
+                            "$id": 265,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:b5570aa6d1b74e349850499d5a709319",
                             "m_BezierCurve": {
@@ -6016,7 +5968,7 @@
                             }
                         },
                         {
-                            "$id": 268,
+                            "$id": 266,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:b5570aa6d1b74e349850499d5a709319",
                             "m_BezierCurve": {
@@ -6058,7 +6010,7 @@
                             }
                         },
                         {
-                            "$id": 269,
+                            "$id": 267,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:b5570aa6d1b74e349850499d5a709319",
                             "m_BezierCurve": {
@@ -6100,7 +6052,7 @@
                             }
                         },
                         {
-                            "$id": 270,
+                            "$id": 268,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6142,7 +6094,7 @@
                             }
                         },
                         {
-                            "$id": 271,
+                            "$id": 269,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6184,7 +6136,7 @@
                             }
                         },
                         {
-                            "$id": 272,
+                            "$id": 270,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6226,7 +6178,7 @@
                             }
                         },
                         {
-                            "$id": 273,
+                            "$id": 271,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6268,7 +6220,7 @@
                             }
                         },
                         {
-                            "$id": 274,
+                            "$id": 272,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6310,7 +6262,7 @@
                             }
                         },
                         {
-                            "$id": 275,
+                            "$id": 273,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6352,7 +6304,7 @@
                             }
                         },
                         {
-                            "$id": 276,
+                            "$id": 274,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6394,7 +6346,7 @@
                             }
                         },
                         {
-                            "$id": 277,
+                            "$id": 275,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6436,7 +6388,7 @@
                             }
                         },
                         {
-                            "$id": 278,
+                            "$id": 276,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6478,7 +6430,7 @@
                             }
                         },
                         {
-                            "$id": 279,
+                            "$id": 277,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6520,7 +6472,7 @@
                             }
                         },
                         {
-                            "$id": 280,
+                            "$id": 278,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6562,7 +6514,7 @@
                             }
                         },
                         {
-                            "$id": 281,
+                            "$id": 279,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6604,7 +6556,7 @@
                             }
                         },
                         {
-                            "$id": 282,
+                            "$id": 280,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6646,7 +6598,7 @@
                             }
                         },
                         {
-                            "$id": 283,
+                            "$id": 281,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6688,7 +6640,7 @@
                             }
                         },
                         {
-                            "$id": 284,
+                            "$id": 282,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -6730,7 +6682,7 @@
                             }
                         },
                         {
-                            "$id": 285,
+                            "$id": 283,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:b5570aa6d1b74e349850499d5a709319",
                             "m_BezierCurve": {
@@ -6772,7 +6724,7 @@
                             }
                         },
                         {
-                            "$id": 286,
+                            "$id": 284,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:b5570aa6d1b74e349850499d5a709319",
                             "m_BezierCurve": {
@@ -6814,7 +6766,7 @@
                             }
                         },
                         {
-                            "$id": 287,
+                            "$id": 285,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:b5570aa6d1b74e349850499d5a709319",
                             "m_BezierCurve": {
@@ -6856,7 +6808,7 @@
                             }
                         },
                         {
-                            "$id": 288,
+                            "$id": 286,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -6898,7 +6850,7 @@
                             }
                         },
                         {
-                            "$id": 289,
+                            "$id": 287,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -6940,7 +6892,7 @@
                             }
                         },
                         {
-                            "$id": 290,
+                            "$id": 288,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -6982,7 +6934,7 @@
                             }
                         },
                         {
-                            "$id": 291,
+                            "$id": 289,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7024,7 +6976,7 @@
                             }
                         },
                         {
-                            "$id": 292,
+                            "$id": 290,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7066,7 +7018,7 @@
                             }
                         },
                         {
-                            "$id": 293,
+                            "$id": 291,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7108,7 +7060,7 @@
                             }
                         },
                         {
-                            "$id": 294,
+                            "$id": 292,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7150,7 +7102,7 @@
                             }
                         },
                         {
-                            "$id": 295,
+                            "$id": 293,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7192,7 +7144,7 @@
                             }
                         },
                         {
-                            "$id": 296,
+                            "$id": 294,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7234,7 +7186,7 @@
                             }
                         },
                         {
-                            "$id": 297,
+                            "$id": 295,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7276,7 +7228,7 @@
                             }
                         },
                         {
-                            "$id": 298,
+                            "$id": 296,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7318,7 +7270,7 @@
                             }
                         },
                         {
-                            "$id": 299,
+                            "$id": 297,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7360,7 +7312,7 @@
                             }
                         },
                         {
-                            "$id": 300,
+                            "$id": 298,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7402,7 +7354,7 @@
                             }
                         },
                         {
-                            "$id": 301,
+                            "$id": 299,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:54efb5d1770cda2448295a371b2124cc",
                             "m_BezierCurve": {
@@ -7444,7 +7396,7 @@
                             }
                         },
                         {
-                            "$id": 302,
+                            "$id": 300,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:54efb5d1770cda2448295a371b2124cc",
                             "m_BezierCurve": {
@@ -7486,7 +7438,7 @@
                             }
                         },
                         {
-                            "$id": 303,
+                            "$id": 301,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:54efb5d1770cda2448295a371b2124cc",
                             "m_BezierCurve": {
@@ -7528,7 +7480,7 @@
                             }
                         },
                         {
-                            "$id": 304,
+                            "$id": 302,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7570,7 +7522,7 @@
                             }
                         },
                         {
-                            "$id": 305,
+                            "$id": 303,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:54efb5d1770cda2448295a371b2124cc",
                             "m_BezierCurve": {
@@ -7612,7 +7564,7 @@
                             }
                         },
                         {
-                            "$id": 306,
+                            "$id": 304,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:54efb5d1770cda2448295a371b2124cc",
                             "m_BezierCurve": {
@@ -7654,7 +7606,7 @@
                             }
                         },
                         {
-                            "$id": 307,
+                            "$id": 305,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7696,7 +7648,7 @@
                             }
                         },
                         {
-                            "$id": 308,
+                            "$id": 306,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -7738,7 +7690,7 @@
                             }
                         },
                         {
-                            "$id": 309,
+                            "$id": 307,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7780,7 +7732,7 @@
                             }
                         },
                         {
-                            "$id": 310,
+                            "$id": 308,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7822,7 +7774,7 @@
                             }
                         },
                         {
-                            "$id": 311,
+                            "$id": 309,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:9a89f6cea93f7e74995aaac4f9408cba",
                             "m_BezierCurve": {
@@ -7864,7 +7816,7 @@
                             }
                         },
                         {
-                            "$id": 312,
+                            "$id": 310,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -7906,7 +7858,7 @@
                             }
                         },
                         {
-                            "$id": 313,
+                            "$id": 311,
                             "$type": 46,
                             "m_LanePrefab": $fstrref:"UnityGUID:752b04030e2f29443a1261255f8d10af",
                             "m_BezierCurve": {
@@ -7951,13 +7903,13 @@
                 }
             },
             {
-                "$id": 314,
+                "$id": 312,
                 "$type": "47|Game.Prefabs.CompanyObject, Game",
                 "name": "CompanyObject",
                 "active": true,
                 "m_SelectCompany": false,
                 "m_Companies": {
-                    "$id": 315,
+                    "$id": 313,
                     "$type": "48|Game.Prefabs.CompanyPrefab[], Game",
                     "$rlength": 7,
                     "$rcontent": [
@@ -7972,19 +7924,19 @@
                 }
             },
             {
-                "$id": 316,
+                "$id": 314,
                 "$type": "49|Game.Prefabs.Localization, Game",
                 "name": "Localization",
                 "active": true,
                 "m_LocalizationID": "Cargo Train Station for Forestry Manufacturing"
             },
             {
-                "$id": 317,
+                "$id": 315,
                 "$type": "50|Game.Prefabs.EditorAssetCategoryOverride, Game",
                 "name": "EditorAssetCategoryOverride",
                 "active": true,
                 "m_IncludeCategories": {
-                    "$id": 318,
+                    "$id": 316,
                     "$type": "51|System.String[], mscorlib",
                     "$rlength": 1,
                     "$rcontent": [
@@ -7992,7 +7944,7 @@
                     ]
                 },
                 "m_ExcludeCategories": {
-                    "$id": 319,
+                    "$id": 317,
                     "$type": 51,
                     "$rlength": 0,
                     "$rcontent": [
@@ -8002,12 +7954,12 @@
         ]
     },
     "m_Meshes": {
-        "$id": 320,
+        "$id": 318,
         "$type": "52|Game.Prefabs.ObjectMeshInfo[], Game",
         "$rlength": 1,
         "$rcontent": [
             {
-                "$id": 321,
+                "$id": 319,
                 "$type": "53|Game.Prefabs.ObjectMeshInfo, Game",
                 "m_Mesh": $fstrref:"UnityGUID:965dcf56b4001444e805b3835c1f3bda",
                 "m_Position": {
