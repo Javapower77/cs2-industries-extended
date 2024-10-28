@@ -16,15 +16,17 @@ using System.IO;
 using Game.Debug;
 using Colossal.IO.AssetDatabase;
 using System.Reflection;
+using Game.Areas;
+using Game.Serialization;
+using IndustriesExtendedDLC.System;
 
-namespace BoostedManufacturingBuidingsAssetPack
+namespace IndustriesExtendedDLC
 {
-    public class Mod : IMod
+    public class Mod : IMod 
     {
-        public static string Name = "Boosted Manufacturing Buildings";
-        // public static string Version = "1.8.0";
+        public static string Name = "Industries Extended DLC";
         public static string Author = "Javapower";
-        public static string uiHostName = "javapower-boostedfactories";
+        public static string uiHostName = "javapower-industriesextended";
 
         public static string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString(4);
         public static string InformationalVersion => Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion;
@@ -33,14 +35,14 @@ namespace BoostedManufacturingBuidingsAssetPack
 
         // Static fields and properties
         
-        public static readonly string Id = "BostedManufacturingBuildings";
+        public static readonly string Id = "IndustriesExtendedDLC";
 
         public static Mod Instance { get; private set; }
         public static ExecutableAsset modAsset { get; private set; }
         internal ILog Log { get; private set; }
 
         // Static logger instance with custom logger name and settings
-        public static ILog log = LogManager.GetLogger($"{nameof(BoostedManufacturingBuidingsAssetPack)}.{nameof(Mod)}")
+        public static ILog log = LogManager.GetLogger($"{nameof(IndustriesExtendedDLC)}.{nameof(Mod)}")
             .SetShowsErrorsInUI(false);
 
         public void OnLoad(UpdateSystem updateSystem)
@@ -59,14 +61,13 @@ namespace BoostedManufacturingBuidingsAssetPack
                 modAsset = asset;
             }
 
-            AssetDatabase.global.LoadSettings(nameof(BoostedManufacturingBuidingsAssetPack), _settings, new Settings(this));
+            AssetDatabase.global.LoadSettings(nameof(IndustriesExtendedDLC), _settings, new Settings(this));
             _settings.ApplyLoadedSettings();
 
             UIManager.defaultUISystem.AddHostLocation(uiHostName, Path.Combine(Path.GetDirectoryName(asset.path), "thumbs"), false);
 
-            //updateSystem.UpdateAt<BoostedForestry>(SystemUpdatePhase.PrefabUpdate);
-            //updateSystem.UpdateAfter<BoostedForestry>(SystemUpdatePhase.ToolUpdate);
-
+            updateSystem.UpdateAt<SceneExplorerUISystem>(SystemUpdatePhase.UIUpdate);
+            updateSystem.UpdateAt<TestQuery>(SystemUpdatePhase.GameSimulation);
 
         }
 

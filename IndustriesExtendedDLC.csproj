@@ -2,8 +2,9 @@
 
     <PropertyGroup>
         <OutputType>Library</OutputType>
-        <TargetFramework>net472</TargetFramework>
+        <TargetFramework>net481</TargetFramework>
         <Configurations>Debug;Release</Configurations>
+	    <LangVersion>9.0</LangVersion>
 
         <!--The folder where Game.dll is located. Set it only if the game is not installed in the default location, otherwise keep it empty-->
         <CustomManagedPath></CustomManagedPath>
@@ -35,6 +36,9 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Reference Include="Colossal.Collections">
+          <HintPath>..\..\..\..\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.Collections.dll</HintPath>
+        </Reference>
         <Reference Include="Colossal.UI">
           <HintPath>..\..\..\..\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.UI.dll</HintPath>
         </Reference>
@@ -86,6 +90,12 @@
         <None Include="$(ModPropsFile)" Link="Properties\Mod.props" />
         <None Include="$(ModTargetsFile)" Link="Properties\Mod.targets" />
     </ItemGroup>
+
+    <Target Name="SetupAttributes" BeforeTargets="BeforeBuild">
+        <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)/LongDescription.md))" Query="//LongDescription" />
+        <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)/ChangeLog.md))" Query="//ChangeLog" />
+        <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$(Version)" Query="//ModVersion/@Value" />
+    </Target>
 
     <Target Name="GetAdditionalFiles" AfterTargets="DeployWIP">
         <ItemGroup>

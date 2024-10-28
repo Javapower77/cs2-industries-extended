@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Unity.Entities;
 
-namespace BoostedManufacturingBuidingsAssetPack.System
+namespace IndustriesExtendedDLC.System
 {
     public struct InspectedObject : IComponentData
     {
@@ -35,6 +35,20 @@ namespace BoostedManufacturingBuidingsAssetPack.System
         public override bool TrySetPrefab(PrefabBase prefab)
         {
             return false;
+        }
+
+        public void ToggleTool()
+        {
+            if (m_ToolSystem.activeTool != this && m_ToolSystem.activeTool == m_DefaultToolSystem)
+            {
+                m_ToolSystem.selected = Entity.Null;
+                m_ToolSystem.activeTool = this;
+            }
+            else if (m_ToolSystem.activeTool == this)
+            {
+                m_ToolSystem.selected = Entity.Null;
+                m_ToolSystem.activeTool = m_DefaultToolSystem;
+            }
         }
     }
 

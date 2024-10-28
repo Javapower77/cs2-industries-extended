@@ -1,11 +1,11 @@
 <Publish>
   <ModId Value="92499" />
-  <DisplayName Value="Boosted Manufacturing Buildings" />
-  <ShortDescription Value="A set of boosted manufacturing buildings" />
-  <LongDescription>
-## Description
+  <DisplayName Value="Industries Extended DLC" />
+  <ShortDescription Value="A set of boosted manufacturing buildings and QoL" />
+  <LongDescription>## Description
 This asset pack add specific industrial manufacturing buildings to produce goods in a boosted way having the production multiplier set to 6.
 Also there are several Cargo Train Stations to get your trains transport specific kind of resources and goods.
+This mod would bring more assets and features to the game related to industries.
 
 ## Added Assets
 * **Forestry Area Placeholder for Factory**
@@ -15,9 +15,12 @@ Also there are several Cargo Train Stations to get your trains transport specifi
 * **Cargo Train Station for Forestry Manufacturing:** A cargo train station that only load Woods, Furniture, Timber and Paper to your cargo trains.
 * **Cargo Train Station for Ore Manufacturing:** A cargo train station that only load Ore, Mineral, Steel and Metal to your cargo trains.
 
+## NOTE
+This mod is not final version. Still keep working on it and make improvements.
+
 ## DISCLAIMER
 * Safe to remove. This mod will not break your save if removed. However the assets will no longer work.
-* This mod may require ***Asset Packs Manager*** which is highly experimental. This mod shouldn't break the save game. But subscribing to assets that require this without the dependency will pop up errors. Worst case you'll get error popups on game load and/or grey boxes in save. But either way, YOU ARE RESPONSIBLE for any damage. Contact me on Discord and I'll try to help you recover anyway.</LongDescription>
+* This mod may require ***Asset Packs Manager*** which is highly experimental. This mod shouldn't break the save game. But subscribing to assets that require this without the dependency will pop up errors. Worst case you'll get error popups on game load and/or grey boxes in save. But either way, YOU ARE RESPONSIBLE for any damage.</LongDescription>
   <Thumbnail Value="Properties/Thumbnail.png" />
   <Screenshot Value="Properties/Previews/Screenshot00.png" />
   <Screenshot Value="Properties/Previews/Screenshot02.png" />
@@ -31,16 +34,16 @@ Also there are several Cargo Train Stations to get your trains transport specifi
   <Screenshot Value="Properties/Previews/Screenshot10.jpg" />
   <Tag Value="Code Mod" />
   <ForumLink Value="" />
-  <ModVersion Value="1.8" />
-  <GameVersion Value="1.1.10f1" />
-    <Dependency Id="78903" />
-	<Dependency Id="75426" />	<!-- I18n EveryWhere -->
-	<Dependency Id="79634" />	<!-- Asset Icon Library -->
-	<ChangeLog>
-## Patch 1.8
-* Recompiled and tested for new patch 1.1.10f1
-* Still not final version, working in adding more assets.
-	</ChangeLog>
+  <ModVersion Value="1.0.0" />
+  <GameVersion Value="1.1.11f1" />
+  <Dependency Id="78903" />
+  <Dependency Id="75426" />
+  <!-- I18n EveryWhere -->
+  <Dependency Id="79634" />
+  <!-- Asset Icon Library -->
+  <ChangeLog>## Patch 1.11
+* Changed the name of the mod, change github repo.
+* Still not final version, working in adding more assets.</ChangeLog>
   <ExternalLink Type="discord" Url="https://discord.gg/UkKAfRqfCn" />
-  <ExternalLink Type="github" Url="https://github.com/Javapower77/cs2-boosted-manufacturing-buidings" />
+  <ExternalLink Type="github" Url="https://github.com/Javapower77/cs2-industries-extended-dlc" />
 </Publish>

@@ -7,9 +7,9 @@ using Game.Modding;
 using Game.Settings;
 using UnityEngine;
 
-namespace BoostedManufacturingBuidingsAssetPack
+namespace IndustriesExtendedDLC
 {
-    [FileLocation("BoostedManufacturingBuidingsAssetPack")]
+    [FileLocation("IndustriesExtendedDLC")]
     [SettingsUIKeyboardAction(ToggleToolAction, customUsages: new[] { Usages.kDefaultUsage, Usages.kToolUsage })]
     [SettingsUIKeyboardAction(ChangeToolModeAction, customUsages: new[] { Usages.kDefaultUsage, Usages.kToolUsage })]
     [SettingsUIKeyboardAction(ToggleComponentSearchAction, customUsages: new[] { Usages.kDefaultUsage, Usages.kToolUsage })]

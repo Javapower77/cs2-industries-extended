@@ -3796,7 +3796,7 @@
                 "active": true,
                 "m_Group": $fstrref:"UnityGUID:1239dee54354f354dbc47d2e5d5ead47",
                 "m_Priority": 22,
-                "m_Icon": "coui://javapower-boostedfactories/CargoTrainStationForestry.png",
+                "m_Icon": "coui://javapower-industriesextendeds/CargoTrainStationForestry.png",
                 "m_IsDebugObject": false
             },
             {
