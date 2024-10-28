@@ -19,40 +19,47 @@ using System.Reflection;
 using Game.Areas;
 using Game.Serialization;
 using IndustriesExtendedDLC.System;
+using System.Linq;
 
-namespace IndustriesExtendedDLC
+
+namespace IndustriesExtendedDLC.Code
 {
-    public class Mod : IMod 
+    public class Mod : IMod
     {
-        public static string Name = "Industries Extended DLC";
-        public static string Author = "Javapower";
+        // some extra info about this mod to show in the UI and/or the components in this mod code
+        public const string MOD_NAME = "Industries Extended DLC";
+        public const string Author = "Javapower";
         public static string uiHostName = "javapower-industriesextended";
-
+        public static readonly string Id = "IndustriesExtendedDLC";
         public static string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString(4);
         public static string InformationalVersion => Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion;
 
-        internal static Settings _settings;
+        internal ModSettings Settings { get; private set; }
 
-        // Static fields and properties
-        
-        public static readonly string Id = "IndustriesExtendedDLC";
+        // Mods Settings Folder
+        public static string SettingsFolder = Path.Combine(EnvPath.kUserDataPath, "ModsSettings", nameof(IndustriesExtendedDLC));
 
         public static Mod Instance { get; private set; }
         public static ExecutableAsset modAsset { get; private set; }
-        internal ILog Log { get; private set; }
 
-        // Static logger instance with custom logger name and settings
-        public static ILog log = LogManager.GetLogger($"{nameof(IndustriesExtendedDLC)}.{nameof(Mod)}")
-            .SetShowsErrorsInUI(false);
+
+        // This is something for the feature if this mod is incompatible with other mod in order to fix
+        // ---
+        // public static bool IsTLEEnabled => _isTLEEnabled ??= GameManager.instance.modManager.ListModsEnabled().Any(x => x.StartsWith("C2VM.CommonLibraries.LaneSystem"));
+        // public static bool IsRBEnabled => _isRBEnabled ??= GameManager.instance.modManager.ListModsEnabled().Any(x => x.StartsWith("RoadBuilder"));
+        // private static bool? _isTLEEnabled;
+        // private static bool? _isRBEnabled;
+
+
 
         public void OnLoad(UpdateSystem updateSystem)
         {
             // Log entry for debugging purposes
             log.Info(nameof(OnLoad));
 
-            _settings = new Settings(this);
-            _settings.RegisterKeyBindings();
-            _settings.RegisterInOptionsUI();
+            Settings = new ModSettings(this, false);
+            Settings.RegisterKeyBindings();
+            Settings.RegisterInOptionsUI();
 
             // Try to fetch the mod asset from the mod manager
             if (GameManager.instance.modManager.TryGetExecutableAsset(this, out var asset))

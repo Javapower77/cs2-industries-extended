@@ -14,7 +14,7 @@ using UnityEngine.InputSystem;
 using static Colossal.IO.AssetDatabase.GeometryAsset;
 using Object = UnityEngine.Object;
 
-namespace IndustriesExtendedDLC
+namespace IndustriesExtendedDLC.Code
 {
     public partial class SceneExplorerUISystem : UISystemBase
     {
@@ -54,7 +54,7 @@ namespace IndustriesExtendedDLC
 
 
         }
-        
+
         protected override void OnDestroy()
         {
             _toggleExplorerAction.onInteraction -= OnToggleSceneExplorerTool;

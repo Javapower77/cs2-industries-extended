@@ -22,7 +22,7 @@ using Unity.Entities;
 using Game.Tools;
 using Colossal.Serialization.Entities;
 
-namespace IndustriesExtendedDLC
+namespace IndustriesExtendedDLC.Code
 {
     public partial class BoostedForestry : GameSystemBase
     {

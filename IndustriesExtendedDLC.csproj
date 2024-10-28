@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>Library</OutputType>
@@ -21,9 +21,23 @@
 
         <AdditionalFilesDirectory>Resources</AdditionalFilesDirectory>
 
-        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <AssemblyVersion>1.11.0</AssemblyVersion>
 
-        <FileVersion>1.0.0</FileVersion>
+        <FileVersion>1.11.0</FileVersion>
+
+        <NeutralLanguage>en</NeutralLanguage>
+
+        <RepositoryUrl>https://github.com/Javapower77/cs2-industries-extended-dlc</RepositoryUrl>
+
+        <PackageProjectUrl>https://github.com/Javapower77/cs2-industries-extended-dlc</PackageProjectUrl>
+
+        <Copyright>(c) 2024, Javapower.</Copyright>
+
+        <Product>Industries Extende Mod for Cities Skyline 2</Product>
+
+        <Authors>Javapower</Authors>
+
+        <Company>Javapower, Inc.</Company>
     </PropertyGroup>
     
     <!--Imports must be after PropertyGroup block-->
@@ -91,10 +105,39 @@
         <None Include="$(ModTargetsFile)" Link="Properties\Mod.targets" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Update="Code\Properties\Resources.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Resources.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Code\Properties\Settings.Designer.cs">
+        <DesignTimeSharedInput>True</DesignTimeSharedInput>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Settings.settings</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Code\Properties\Resources.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.props" Link="Code\Properties\Mod.props" />
+      <None Update="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" Link="Code\Properties\Mod.targets" />
+      <None Update="Code\Properties\Settings.settings">
+        <Generator>SettingsSingleFileGenerator</Generator>
+        <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      </None>
+    </ItemGroup>
+
     <Target Name="SetupAttributes" BeforeTargets="BeforeBuild">
-        <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)/LongDescription.md))" Query="//LongDescription" />
-        <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)/ChangeLog.md))" Query="//ChangeLog" />
-        <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$(Version)" Query="//ModVersion/@Value" />
+      <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)/longDescription.md).Replace('%26','%26amp%3B').Replace('%22','%26quot%3B').Replace('%3c','%26lt%3B').Replace('%3e','%26gt%3B'))" Query="//LongDescription" />
+      <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)changelog.md).Replace('%26','%26amp%3B').Replace('%22','%26quot%3B').Replace('%3c','%26lt%3B').Replace('%3e','%26gt%3B'))" Query="//ChangeLog" />
+      <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$(Version)" Query="//ModVersion/@Value" />
     </Target>
 
     <Target Name="GetAdditionalFiles" AfterTargets="DeployWIP">

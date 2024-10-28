@@ -7,7 +7,7 @@ using Game.Modding;
 using Game.Settings;
 using UnityEngine;
 
-namespace IndustriesExtendedDLC
+namespace IndustriesExtendedDLC.Code
 {
     [FileLocation("IndustriesExtendedDLC")]
     [SettingsUIKeyboardAction(ToggleToolAction, customUsages: new[] { Usages.kDefaultUsage, Usages.kToolUsage })]
