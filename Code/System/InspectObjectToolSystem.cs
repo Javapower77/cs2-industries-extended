@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Unity.Entities;
 
-namespace IndustriesExtendedDLC.Code.System
+namespace IndustriesExtendedDLC.System
 {
     public struct InspectedObject : IComponentData
     {

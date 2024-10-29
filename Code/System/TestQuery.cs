@@ -57,8 +57,17 @@ namespace IndustriesExtendedDLC.System
                     data.m_CommercialUpkeepLevelExponent = (float)data.m_CommercialUpkeepLevelExponent + 0;
                     data.m_CommuterWageMultiplier = (float)data.m_CommuterWageMultiplier + 0;
                     data.m_CompanyBankruptcyLimit = (int)data.m_CompanyBankruptcyLimit + 0;
+                    
+                    
                     data.m_ExtractorCompanyExportMultiplier = (float)data.m_ExtractorCompanyExportMultiplier + 0;
+                    data.m_ExtractorCompanyExportMultiplier = ModSettings.Instance.ExtractorCompanyExportMultiplier;
+
+                    // este coeficiente aumenta la produccion
                     data.m_ExtractorProductionEfficiency = (float)data.m_ExtractorProductionEfficiency + 0;
+                    data.m_ExtractorProductionEfficiency = ModSettings.Instance.ExtractorProductionEfficiency;
+
+
+
                     data.m_FamilyAllowance = (int)data.m_FamilyAllowance + 0;
                     data.m_IndustrialEfficiency = (float)data.m_IndustrialEfficiency + 0;
                     data.m_IndustrialUpkeepLevelExponent = (float)data.m_IndustrialUpkeepLevelExponent + 0;
