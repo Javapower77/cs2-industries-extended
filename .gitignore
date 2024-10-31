@@ -3,9 +3,6 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-# Asset Pack Creator settings
-assetPackCreatorSettings.json
-
 # User-specific files
 *.rsuser
 *.suo
@@ -410,4 +407,6 @@ GlobalProperties.props
 /.idea/.idea.CustomAssetPack/.idea/vcs.xml
 
 # Cities Skyline 2 Modding related not need tracking in git
-AssetPackCreator/
+# Asset Pack Creator settings
+assetPackCreatorSettings.json
+[Aa]sset[Pp]ack[Cc]reator/*
