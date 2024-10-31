@@ -6,7 +6,7 @@
     "components": {
         "$id": 1,
         "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
-        "$rlength": 11,
+        "$rlength": 9,
         "$rcontent": [
             {
                 "$id": 2,
@@ -21,8 +21,8 @@
                 "$type": "3|Game.Prefabs.PlaceableObject, Game",
                 "name": "PlaceableObject",
                 "active": true,
-                "m_ConstructionCost": 0,
-                "m_XPReward": 0
+                "m_ConstructionCost": 15200,
+                "m_XPReward": 19000
             },
             {
                 "$id": 4,
@@ -87,7 +87,7 @@
                 "active": true,
                 "m_Group": $fstrref:"UnityGUID:bf9d9a4d7e119a8469b068587e222a82",
                 "m_Priority": 25,
-                "m_Icon": "coui://javapower-industriesextendeds/Forestry Boosted Factories.png",
+                "m_Icon": "coui://javapower-industriesextended/Forestry Boosted Factories.png",
                 "m_IsDebugObject": false
             },
             {
@@ -140,26 +140,16 @@
                     "$rcontent": [
                     ]
                 },
-                "m_SpaceMultiplier": 600
+                "m_SpaceMultiplier": 5
             },
             {
                 "$id": 17,
-                "$type": "15|Game.Prefabs.Pollution, Game",
-                "name": "Pollution",
-                "active": true,
-                "m_GroundPollution": 0,
-                "m_AirPollution": 0,
-                "m_NoisePollution": 0,
-                "m_ScaleWithRenters": true
-            },
-            {
-                "$id": 18,
-                "$type": "16|Game.Prefabs.EditorAssetCategoryOverride, Game",
+                "$type": "15|Game.Prefabs.EditorAssetCategoryOverride, Game",
                 "name": "EditorAssetCategoryOverride",
                 "active": true,
                 "m_IncludeCategories": {
-                    "$id": 19,
-                    "$type": "17|System.String[], mscorlib",
+                    "$id": 18,
+                    "$type": "16|System.String[], mscorlib",
                     "$rlength": 1,
                     "$rcontent": [
                         "Javapower/Industry/Extractors"
@@ -168,59 +158,44 @@
                 "m_ExcludeCategories": null
             },
             {
-                "$id": 20,
-                "$type": "18|Game.Prefabs.ResourceProducer, Game",
-                "name": "ResourceProducer",
-                "active": true,
-                "m_Resources": {
-                    "$id": 21,
-                    "$type": "19|Game.Prefabs.ResourceProductionInfo[], Game",
-                    "$rlength": 1,
-                    "$rcontent": [
-                        {
-                            "$id": 22,
-                            "$type": "20|Game.Prefabs.ResourceProductionInfo, Game",
-                            "m_Resource": 7,
-                            "m_ProductionRate": 15000,
-                            "m_StorageCapacity": 60000
-                        }
-                    ]
-                }
-            },
-            {
-                "$id": 23,
-                "$type": "21|Game.Prefabs.InitialResources, Game",
-                "name": "InitialResources",
-                "active": true,
-                "m_InitialResources": {
-                    "$id": 24,
-                    "$type": "22|Game.Prefabs.InitialResourceItem[], Game",
-                    "$rlength": 1,
-                    "$rcontent": [
-                        {
-                            "$id": 25,
-                            "$type": "23|Game.Prefabs.InitialResourceItem, Game",
-                            "m_Value": {
-                                "$type": "24|Game.Prefabs.ResourceStackInEditor, Game",
-                                "m_Resource": 8,
-                                "m_Amount": 10000000
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "$id": 26,
-                "$type": "25|Game.Prefabs.Effects.SelectedSound, Game",
+                "$id": 19,
+                "$type": "17|Game.Prefabs.Effects.SelectedSound, Game",
                 "name": "SelectedSound",
                 "active": true,
                 "m_SelectedSound": $fstrref:"UnityGUID:e56b77208dd68f54fbe6f589ef1c14ee"
+            },
+            {
+                "$id": 20,
+                "$type": "18|Game.Prefabs.CityEffects, Game",
+                "name": "CityEffects",
+                "active": true,
+                "m_Effects": {
+                    "$id": 21,
+                    "$type": "19|Game.Prefabs.CityEffectInfo[], Game",
+                    "$rlength": 2,
+                    "$rcontent": [
+                        {
+                            "$id": 22,
+                            "$type": "20|Game.Prefabs.CityEffectInfo, Game",
+                            "m_Type": 31,
+                            "m_Mode": 0,
+                            "m_Delta": 0.8
+                        },
+                        {
+                            "$id": 23,
+                            "$type": 20,
+                            "m_Type": 29,
+                            "m_Mode": 0,
+                            "m_Delta": 0.35
+                        }
+                    ]
+                }
             }
         ]
     },
     "m_Meshes": {
-        "$id": 27,
-        "$type": "26|Game.Prefabs.ObjectMeshInfo[], Game",
+        "$id": 24,
+        "$type": "21|Game.Prefabs.ObjectMeshInfo[], Game",
         "$rlength": 0,
         "$rcontent": [
         ]

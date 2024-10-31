@@ -36,7 +36,6 @@ namespace IndustriesExtendedDLC
         public static string InformationalVersion => Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion;
         internal static ModSettings Settings { get; private set; }
 
-        public static ExecutableAsset modAsset { get; private set; }
         public string ModPath { get; set; }
 
         // This is something for the feature if this mod is incompatible with other mod in order to fix
@@ -68,9 +67,9 @@ namespace IndustriesExtendedDLC
                 // Set the thumbnails location for the assets inside the mod
                 UIManager.defaultUISystem.AddHostLocation(uiHostName, Path.Combine(Path.GetDirectoryName(asset.path), "thumbs"), false);
                 Logger.Info($"Current mod asset at {asset.path}");
-                modAsset = asset;
             }
-           
+
+            Settings.ApplyAndSave();
 
             updateSystem.UpdateAt<SceneExplorerUISystem>(SystemUpdatePhase.UIUpdate);
             updateSystem.UpdateAt<TestQuery>(SystemUpdatePhase.GameSimulation);

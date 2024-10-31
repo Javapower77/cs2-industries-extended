@@ -1,6 +1,7 @@
 ## Description
 This asset pack add specific industrial manufacturing buildings to produce goods in a boosted way having the production multiplier set to 6.
 Also there are several Cargo Train Stations to get your trains transport specific kind of resources and goods.
+Using CTRL+E by defaults will apply the settings of the Extractor Efficiency that can be configured in the Settings Option of the Menu. I will change this behaivor in future release.
 This mod would bring more assets and features to the game related to industries.
 
 ## Added Assets
@@ -13,6 +14,15 @@ This mod would bring more assets and features to the game related to industries.
 
 ## NOTE
 This mod is not final version. Still keep working on it and make improvements.
+
+## SPECIAL THANKS
+I would like to thanks a lot for the patience on answering my question in order to keep learning on modding CS2 to the people on the Cities Skyline Modding Discord Server.
+krzychu124
+Bruceyboy24804
+StarQ / Qoushik
+TDW
+yenyang
+... to mention some of them
 
 ## DISCLAIMER
 * Safe to remove. This mod will not break your save if removed. However the assets will no longer work.

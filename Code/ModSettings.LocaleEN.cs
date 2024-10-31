@@ -69,6 +69,14 @@ namespace IndustriesExtendedDLC
                     { _setting.GetOptionDescLocaleID(nameof(ModSettings.AuthorMod)), "Name of the author of this mod." },
                     { _setting.GetOptionLabelLocaleID(nameof(ModSettings.InformationalVersion)), "Informational Version" },
                     { _setting.GetOptionDescLocaleID(nameof(ModSettings.InformationalVersion)), "Mod version with the commit ID from GitHub." },
+                    { _setting.GetOptionLabelLocaleID(nameof(ModSettings.DiscordServers)), "Discord Servers" },
+                    { _setting.GetOptionLabelLocaleID(nameof(ModSettings.OpenCS2ModdingDiscord)), "Cities: Skylines Modding Discord" },
+                    { _setting.GetOptionDescLocaleID(nameof(ModSettings.OpenCS2ModdingDiscord)), "Open the official Cities Skyline 2 modding discord server." },
+                    { _setting.GetOptionLabelLocaleID(nameof(ModSettings.OpenAuthorDiscord)), "Mod Author Server" },
+                    { _setting.GetOptionDescLocaleID(nameof(ModSettings.OpenAuthorDiscord)), "Open the author discord server." },
+                    // Buttons
+                    { _setting.GetOptionLabelLocaleID(nameof(ModSettings.Reset)), "Reset to Vanilla" },
+                    { _setting.GetOptionDescLocaleID(nameof(ModSettings.Reset)), "Reset all values to it's vanilla values." }
                 };
             }
 

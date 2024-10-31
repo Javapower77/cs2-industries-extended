@@ -8,6 +8,7 @@ using Game.Modding;
 using Game.Prefabs;
 using Game.SceneFlow;
 using Game.Settings;
+using Game.UI.InGame;
 using Game.UI.Widgets;
 using Unity.Entities;
 using UnityEngine.Device;
@@ -22,6 +23,9 @@ namespace IndustriesExtendedDLC
     {
         internal const string SETTINGS_ASSET_NAME = "Industries Extended DLC General Settings";
         internal static ModSettings Instance { get; private set; }
+
+        // Default values from the game
+        private static readonly VanillaData VanillaData = new();
 
         // TABs from the Settings UI
         internal const string GeneralTab = "General";        
@@ -38,6 +42,10 @@ namespace IndustriesExtendedDLC
         [SettingsUISlider(min = 0f, max = 1f, step = 0.1f, unit = Game.UI.Unit.kFloatSingleFraction)]
         [SettingsUISection(GeneralTab, ExtractorsSection)]
         public float ExtractorCompanyExportMultiplier { get; set; }
+
+        [SettingsUIButton]
+        [SettingsUISection(GeneralTab, ExtractorsSection)]
+        public bool Reset { set { SetDefaults(); } }
 
         [SettingsUISection(AboutTab, AboutSection)]
         public string ModVersion => Mod.Version;
@@ -79,20 +87,67 @@ namespace IndustriesExtendedDLC
                 }
             }
         }
-        public string TranslationCoverageStatus => string.Empty;
+   
+        [SettingsUISection(AboutTab, AboutSection)]
+        [SettingsUIMultilineText("coui://javapower-industriesextended/discord-icon-white.png")]
+        public string DiscordServers => string.Empty;
+
+        [SettingsUISection(AboutTab, AboutSection)]
+        public bool OpenCS2ModdingDiscord
+        {
+            set
+            {
+                try
+                {
+                    Application.OpenURL($"https://discord.gg/HTav7ARPs2");
+                }
+                catch (Exception e)
+                {
+                    UnityEngine.Debug.LogException(e);
+                }
+            }
+        }
+
+        [SettingsUISection(AboutTab, AboutSection)]
+        public bool OpenAuthorDiscord
+        {
+            set
+            {
+                try
+                {
+                    Application.OpenURL($"https://discord.gg/VxDJTMzf");
+                }
+                catch (Exception e)
+                {
+                    UnityEngine.Debug.LogException(e);
+                }
+            }
+        }
 
         public ModSettings(IMod mod, bool asDefault) : base(mod)
         {
             Instance = this;
-            SetDefaults();
-            ApplyAndSave();
         }
 
-        public sealed override void SetDefaults()
+        public override void SetDefaults()
         {
-            ExtractorProductionEfficiency = 8f;
-            ExtractorCompanyExportMultiplier = 0.85f;
+            ExtractorProductionEfficiency = VanillaData.ExtractorProductionEfficiency;
+            ExtractorCompanyExportMultiplier = VanillaData.ExtractorCompanyExportMultiplier;
         }
+
+        /*
+        public override void Apply()
+        {
+            OverlaySystem toolOverlaySystem = World.DefaultGameObjectInjectionWorld.GetExistingSystemManaged<OverlaySystem>();
+            toolOverlaySystem.ApplyOverlayParams(new OverlayParameterData()
+            {
+                extractorCompanyExportMultiplier = ExtractorCompanyExportMultiplier,
+                extractorProductionEfficiency = ExtractorProductionEfficiency
+            });
+            base.Apply();
+        }
+        */
+
     }
 }
 

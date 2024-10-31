@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>Library</OutputType>
-        <TargetFramework>net481</TargetFramework>
+        <TargetFramework>net472</TargetFramework>
         <Configurations>Debug;Release</Configurations>
 	    <LangVersion>9.0</LangVersion>
 
@@ -21,9 +21,11 @@
 
         <AdditionalFilesDirectory>Resources</AdditionalFilesDirectory>
 
-        <AssemblyVersion>1.11.0</AssemblyVersion>
+        <AssemblyVersion>1.14.0</AssemblyVersion>
 
-        <FileVersion>1.11.0</FileVersion>
+        <FileVersion>1.14.0</FileVersion>
+
+		<Version>1.14.0</Version>
 
         <NeutralLanguage>en</NeutralLanguage>
 
@@ -104,7 +106,23 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.props" />
+    </ItemGroup>
+
+    <ItemGroup>
         <None Include="$(ModPropsFile)" Link="Properties\Mod.props" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.props" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
+        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
         <None Include="$(ModTargetsFile)" Link="Properties\Mod.targets" />
     </ItemGroup>
 
@@ -129,8 +147,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.props" Link="Code\Properties\Mod.props" />
-      <None Update="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" Link="Code\Properties\Mod.targets" />
       <None Update="Code\Properties\Settings.settings">
         <Generator>SettingsSingleFileGenerator</Generator>
         <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -138,8 +154,8 @@
     </ItemGroup>
 
     <Target Name="SetupAttributes" BeforeTargets="BeforeBuild">
-      <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)/code/longDescription.md).Replace('%26','%26amp%3B').Replace('%22','%26quot%3B').Replace('%3c','%26lt%3B').Replace('%3e','%26gt%3B'))" Query="//Code//LongDescription" />
-      <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)/code/changelog.md).Replace('%26','%26amp%3B').Replace('%22','%26quot%3B').Replace('%3c','%26lt%3B').Replace('%3e','%26gt%3B'))" Query="//Code//ChangeLog" />
+      <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)/code/longDescription.md).Replace('%26','%26amp%3B').Replace('%22','%26quot%3B').Replace('%3c','%26lt%3B').Replace('%3e','%26gt%3B'))" Query="//LongDescription" />
+      <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$([System.IO.File]::ReadAllText($(ProjectDir)/code/changelog.md).Replace('%26','%26amp%3B').Replace('%22','%26quot%3B').Replace('%3c','%26lt%3B').Replace('%3e','%26gt%3B'))" Query="//ChangeLog" />
       <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$(Version)" Query="//ModVersion/@Value" />
     </Target>
 

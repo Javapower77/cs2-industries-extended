@@ -103,7 +103,7 @@
                 "active": true,
                 "m_Group": $fstrref:"UnityGUID:3d9900ec40b525140b80c60e725d8f91",
                 "m_Priority": 802,
-                "m_Icon": "coui://javapower-industriesextendeds/PaperFactory.png",
+                "m_Icon": "coui://javapower-industriesextended/PaperFactory.png",
                 "m_LargeIcon": "",
                 "m_IsDebugObject": false
             },

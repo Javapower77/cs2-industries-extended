@@ -408,3 +408,6 @@ GlobalProperties.props
 /Library/ilpp.pid
 /.idea/.idea.CustomAssetPack/.idea/indexLayout.xml
 /.idea/.idea.CustomAssetPack/.idea/vcs.xml
+
+# Cities Skyline 2 Modding related not need tracking in git
+/AssetPackCreator

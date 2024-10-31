@@ -31,6 +31,7 @@ namespace IndustriesExtendedDLC.System
         private EntityQuery _featureQuery;
         private EntityQuery _featureQuery2;
         private EntityQuery _featureQuery3;
+        
 
         protected override void OnCreate()
         {
@@ -40,7 +41,6 @@ namespace IndustriesExtendedDLC.System
         public void DoTesting()
         {
             _testQuery = SystemAPI.QueryBuilder().WithAll<EconomyParameterData>().Build();
-            
             _featureQuery = SystemAPI.QueryBuilder().WithAll<Building>().WithAny<IndustrialProperty>().Build();
             _featureQuery2 = SystemAPI.QueryBuilder().WithAll<Building>().WithAny<PropertyRenter>().Build();
             _featureQuery3 = SystemAPI.QueryBuilder().WithAll<PropertyRenter>().Build();
@@ -50,6 +50,9 @@ namespace IndustriesExtendedDLC.System
 
                 if (EntityManager.TryGetComponent(entity, out EconomyParameterData data))
                 {
+                    // All possible Economy params from the game that can be changed.
+                    // I don't get the real propuse for each of them
+                    /*                    
                     data.m_BuildRefundPercentage = (float3)data.m_BuildRefundPercentage + 0;
                     data.m_BuildRefundTimeRange = (float3)data.m_BuildRefundTimeRange + 0;
                     data.m_CityServiceWageAdjustment = (float)data.m_CityServiceWageAdjustment + 0;
@@ -57,17 +60,6 @@ namespace IndustriesExtendedDLC.System
                     data.m_CommercialUpkeepLevelExponent = (float)data.m_CommercialUpkeepLevelExponent + 0;
                     data.m_CommuterWageMultiplier = (float)data.m_CommuterWageMultiplier + 0;
                     data.m_CompanyBankruptcyLimit = (int)data.m_CompanyBankruptcyLimit + 0;
-                    
-                    
-                    data.m_ExtractorCompanyExportMultiplier = (float)data.m_ExtractorCompanyExportMultiplier + 0;
-                    data.m_ExtractorCompanyExportMultiplier = ModSettings.Instance.ExtractorCompanyExportMultiplier;
-
-                    // este coeficiente aumenta la produccion
-                    data.m_ExtractorProductionEfficiency = (float)data.m_ExtractorProductionEfficiency + 0;
-                    data.m_ExtractorProductionEfficiency = ModSettings.Instance.ExtractorProductionEfficiency;
-
-
-
                     data.m_FamilyAllowance = (int)data.m_FamilyAllowance + 0;
                     data.m_IndustrialEfficiency = (float)data.m_IndustrialEfficiency + 0;
                     data.m_IndustrialUpkeepLevelExponent = (float)data.m_IndustrialUpkeepLevelExponent + 0;
@@ -99,7 +91,20 @@ namespace IndustriesExtendedDLC.System
                     data.m_Wage4 = (int)data.m_Wage4 + 0;
                     data.m_WorkDayEnd = (int)data.m_WorkDayEnd + 0;
                     data.m_WorkDayStart = (int)data.m_WorkDayStart + 0;
+                    */
 
+                    // This will impact of the export incoming for the natural resource?
+                    data.m_ExtractorCompanyExportMultiplier = (float)data.m_ExtractorCompanyExportMultiplier + 0;
+                    data.m_ExtractorCompanyExportMultiplier = Mod.Settings.ExtractorCompanyExportMultiplier;
+
+                    // This value will increase the amount of natural resource harvested in a global way because
+                    // it's apply to all the natural resources and for all the PreFrabs that acts as an extractor (Placeholders)
+                    // I think the formula is ExtractorProductionEfficiency * BuildingEfficiency
+                    data.m_ExtractorProductionEfficiency = (float)data.m_ExtractorProductionEfficiency + 0;
+                    data.m_ExtractorProductionEfficiency = Mod.Settings.ExtractorProductionEfficiency;
+
+                    // Apply the values to the game. I had to change it to be call in the main load.
+                    // Now is executed from CRLT+E keybindings
                     EntityManager.SetComponentData(entity, data);
                 }
             }
