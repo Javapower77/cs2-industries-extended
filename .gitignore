@@ -410,4 +410,4 @@ GlobalProperties.props
 /.idea/.idea.CustomAssetPack/.idea/vcs.xml
 
 # Cities Skyline 2 Modding related not need tracking in git
-/AssetPackCreator
+AssetPackCreator/
