@@ -4,7 +4,7 @@
         <OutputType>Library</OutputType>
         <TargetFramework>net472</TargetFramework>
         <Configurations>Debug;Release</Configurations>
-	    <LangVersion>9.0</LangVersion>
+	    <LangVersion>latest</LangVersion>
 
         <!--The folder where Game.dll is located. Set it only if the game is not installed in the default location, otherwise keep it empty-->
         <CustomManagedPath></CustomManagedPath>
@@ -21,11 +21,11 @@
 
         <AdditionalFilesDirectory>Resources</AdditionalFilesDirectory>
 
-        <AssemblyVersion>1.14.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0</AssemblyVersion>
 
-        <FileVersion>1.14.0</FileVersion>
+        <FileVersion>1.17.0</FileVersion>
 
-		<Version>1.14.0</Version>
+		<Version>1.17.0</Version>
 
         <NeutralLanguage>en</NeutralLanguage>
 
@@ -53,13 +53,13 @@
 
     <ItemGroup>
         <Reference Include="Colossal.Collections">
-          <HintPath>..\..\..\..\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.Collections.dll</HintPath>
+			<Private>false</Private>
         </Reference>
         <Reference Include="Colossal.Localization">
-          <HintPath>..\..\..\..\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.Localization.dll</HintPath>
+			<Private>false</Private>
         </Reference>
         <Reference Include="Colossal.UI">
-          <HintPath>..\..\..\..\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.UI.dll</HintPath>
+			<Private>false</Private>
         </Reference>
         <Reference Include="Game">
             <Private>false</Private>
@@ -74,10 +74,10 @@
             <Private>false</Private>
         </Reference>
         <Reference Include="Unity.Collections">
-          <HintPath>..\..\..\..\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Unity.Collections.dll</HintPath>
+			<Private>false</Private>
         </Reference>
         <Reference Include="Unity.InputSystem">
-          <HintPath>..\..\..\..\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Unity.InputSystem.dll</HintPath>
+			<Private>false</Private>
         </Reference>
         <Reference Include="UnityEngine.CoreModule">
             <Private>false</Private>
@@ -106,23 +106,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.props" />
-    </ItemGroup>
-
-    <ItemGroup>
         <None Include="$(ModPropsFile)" Link="Properties\Mod.props" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.props" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
-        <None Remove="C:\Users\jibarra\AppData\LocalLow\Colossal Order\Cities Skylines II\.cache\Modding\Mod.targets" />
         <None Include="$(ModTargetsFile)" Link="Properties\Mod.targets" />
     </ItemGroup>
 

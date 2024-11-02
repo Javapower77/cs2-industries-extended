@@ -21,12 +21,12 @@ This mod is not final version. Still keep working on it and make improvements.
 
 ## SPECIAL THANKS
 I would like to thanks a lot for the patience on answering my question in order to keep learning on modding CS2 to the people on the Cities Skyline Modding Discord Server.
-krzychu124
-Bruceyboy24804
-StarQ / Qoushik
-TDW
-yenyang
-... to mention some of them
+* krzychu124
+* Bruceyboy24804
+* StarQ / Qoushik
+* TDW
+* yenyang
+... to mention some of them!
 
 ## DISCLAIMER
 * Safe to remove. This mod will not break your save if removed. However the assets will no longer work.
@@ -44,19 +44,15 @@ yenyang
   <Screenshot Value="Code/Properties/Previews/Screenshot10.jpg" />
   <Tag Value="Code Mod" />
   <ForumLink Value="" />
-  <ModVersion Value="1.14.0" />
+  <ModVersion Value="1.17.0" />
   <GameVersion Value="1.1.11f1" />
   <Dependency Id="78903" />
   <Dependency Id="75426" />
   <!-- I18n EveryWhere -->
   <Dependency Id="79634" />
   <!-- Asset Icon Library -->
-  <ChangeLog>## Patch 1.14
-* Added a settings page in the Options menu of the game to apply boost in the extractor of the natural resources (will change in future release)
-* CTRL+E (by default, can be changed in Options) apply the coeficient to boost extractions.
-* Code clean up.
-* Change icons and thumbnails.
-* No new assets
+  <ChangeLog>## Patch 1.17
+* Fix an issue with electricy bottleneck consumption on the special factories. 
 * Still not final version, working in adding more assets.</ChangeLog>
   <ExternalLink Type="discord" Url="https://discord.gg/UkKAfRqfCn" />
   <ExternalLink Type="github" Url="https://github.com/Javapower77/cs2-industries-extended-dlc" />

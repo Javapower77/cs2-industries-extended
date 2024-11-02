@@ -6,7 +6,7 @@
     "components": {
         "$id": 1,
         "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
-        "$rlength": 14,
+        "$rlength": 13,
         "$rcontent": [
             {
                 "$id": 2,
@@ -104,7 +104,6 @@
                 "m_Group": $fstrref:"UnityGUID:3d9900ec40b525140b80c60e725d8f91",
                 "m_Priority": 802,
                 "m_Icon": "coui://javapower-industriesextended/TimberFactory.png",
-                "m_LargeIcon": "",
                 "m_IsDebugObject": false
             },
             {
@@ -9987,9 +9986,9 @@
                 "$type": "37|Game.Prefabs.Pollution, Game",
                 "name": "Pollution",
                 "active": true,
-                "m_GroundPollution": 10,
-                "m_AirPollution": 71,
-                "m_NoisePollution": 13,
+                "m_GroundPollution": 1005,
+                "m_AirPollution": 3420,
+                "m_NoisePollution": 1890,
                 "m_ScaleWithRenters": false
             },
             {
@@ -10006,28 +10005,17 @@
                     ]
                 },
                 "m_ExcludeCategories": null
-            },
-            {
-                "$id": 385,
-                "$type": "40|Game.Prefabs.ServiceConsumption, Game",
-                "name": "ServiceConsumption",
-                "active": true,
-                "m_Upkeep": 1500,
-                "m_ElectricityConsumption": 300,
-                "m_WaterConsumption": 150,
-                "m_GarbageAccumulation": 0,
-                "m_TelecomNeed": 0
             }
         ]
     },
     "m_Meshes": {
-        "$id": 386,
-        "$type": "41|Game.Prefabs.ObjectMeshInfo[], Game",
+        "$id": 385,
+        "$type": "40|Game.Prefabs.ObjectMeshInfo[], Game",
         "$rlength": 1,
         "$rcontent": [
             {
-                "$id": 387,
-                "$type": "42|Game.Prefabs.ObjectMeshInfo, Game",
+                "$id": 386,
+                "$type": "41|Game.Prefabs.ObjectMeshInfo, Game",
                 "m_Mesh": $fstrref:"UnityGUID:a9e19ba0746a3ba4f889d812e604e087",
                 "m_Position": {
                     "$type": 14,

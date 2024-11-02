@@ -6,7 +6,7 @@
     "components": {
         "$id": 1,
         "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
-        "$rlength": 9,
+        "$rlength": 8,
         "$rcontent": [
             {
                 "$id": 2,
@@ -22,7 +22,7 @@
                 "name": "PlaceableObject",
                 "active": true,
                 "m_ConstructionCost": 15200,
-                "m_XPReward": 19000
+                "m_XPReward": 100
             },
             {
                 "$id": 4,
@@ -163,39 +163,12 @@
                 "name": "SelectedSound",
                 "active": true,
                 "m_SelectedSound": $fstrref:"UnityGUID:e56b77208dd68f54fbe6f589ef1c14ee"
-            },
-            {
-                "$id": 20,
-                "$type": "18|Game.Prefabs.CityEffects, Game",
-                "name": "CityEffects",
-                "active": true,
-                "m_Effects": {
-                    "$id": 21,
-                    "$type": "19|Game.Prefabs.CityEffectInfo[], Game",
-                    "$rlength": 2,
-                    "$rcontent": [
-                        {
-                            "$id": 22,
-                            "$type": "20|Game.Prefabs.CityEffectInfo, Game",
-                            "m_Type": 31,
-                            "m_Mode": 0,
-                            "m_Delta": 0.8
-                        },
-                        {
-                            "$id": 23,
-                            "$type": 20,
-                            "m_Type": 29,
-                            "m_Mode": 0,
-                            "m_Delta": 0.35
-                        }
-                    ]
-                }
             }
         ]
     },
     "m_Meshes": {
-        "$id": 24,
-        "$type": "21|Game.Prefabs.ObjectMeshInfo[], Game",
+        "$id": 20,
+        "$type": "18|Game.Prefabs.ObjectMeshInfo[], Game",
         "$rlength": 0,
         "$rcontent": [
         ]

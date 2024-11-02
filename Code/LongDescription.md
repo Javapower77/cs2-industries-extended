@@ -17,12 +17,12 @@ This mod is not final version. Still keep working on it and make improvements.
 
 ## SPECIAL THANKS
 I would like to thanks a lot for the patience on answering my question in order to keep learning on modding CS2 to the people on the Cities Skyline Modding Discord Server.
-krzychu124
-Bruceyboy24804
-StarQ / Qoushik
-TDW
-yenyang
-... to mention some of them
+* krzychu124
+* Bruceyboy24804
+* StarQ / Qoushik
+* TDW
+* yenyang
+... to mention some of them!
 
 ## DISCLAIMER
 * Safe to remove. This mod will not break your save if removed. However the assets will no longer work.

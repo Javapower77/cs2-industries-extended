@@ -104,7 +104,6 @@
                 "m_Group": $fstrref:"UnityGUID:3d9900ec40b525140b80c60e725d8f91",
                 "m_Priority": 802,
                 "m_Icon": "coui://javapower-industriesextended/PaperFactory.png",
-                "m_LargeIcon": "",
                 "m_IsDebugObject": false
             },
             {
@@ -9824,9 +9823,9 @@
                 "$type": "37|Game.Prefabs.Pollution, Game",
                 "name": "Pollution",
                 "active": true,
-                "m_GroundPollution": 150,
-                "m_AirPollution": 110,
-                "m_NoisePollution": 95,
+                "m_GroundPollution": 1500,
+                "m_AirPollution": 2500,
+                "m_NoisePollution": 950,
                 "m_ScaleWithRenters": false
             },
             {
@@ -9852,14 +9851,9 @@
             },
             {
                 "$id": 379,
-                "$type": "40|Game.Prefabs.ServiceConsumption, Game",
-                "name": "ServiceConsumption",
-                "active": true,
-                "m_Upkeep": 1500,
-                "m_ElectricityConsumption": 330,
-                "m_WaterConsumption": 225,
-                "m_GarbageAccumulation": 0,
-                "m_TelecomNeed": 0
+                "$type": "40|Game.Prefabs.EditorContainer, Game",
+                "name": "EditorContainer",
+                "active": true
             }
         ]
     },
