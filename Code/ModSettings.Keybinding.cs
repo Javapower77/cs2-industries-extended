@@ -11,7 +11,7 @@ using Game.UI.Widgets;
 using Unity.Entities;
 using UnityEngine.Device;
 
-namespace IndustriesExtendedDLC
+namespace IndustriesExtended
 {
     [SettingsUIKeyboardAction(KeyBindAction.ToggleToolAction, customUsages: new[] { Usages.kDefaultUsage, Usages.kToolUsage })]
    

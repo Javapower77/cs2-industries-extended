@@ -6,7 +6,7 @@
     "components": {
         "$id": 1,
         "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
-        "$rlength": 14,
+        "$rlength": 13,
         "$rcontent": [
             {
                 "$id": 2,
@@ -304,7 +304,7 @@
                                     "w": 2.98023224E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -328,7 +328,7 @@
                                     "w": 2.98023224E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -472,7 +472,7 @@
                                     "w": 2.98023224E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -592,7 +592,7 @@
                                     "w": 2.98023224E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -640,7 +640,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -712,7 +712,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -736,7 +736,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -760,7 +760,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -784,7 +784,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -808,7 +808,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -832,7 +832,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -856,7 +856,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -880,7 +880,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -904,7 +904,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -928,7 +928,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -952,7 +952,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -976,7 +976,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1000,7 +1000,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1024,7 +1024,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1048,7 +1048,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1072,7 +1072,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1096,7 +1096,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1120,7 +1120,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1144,7 +1144,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1168,7 +1168,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1192,7 +1192,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1216,7 +1216,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1240,7 +1240,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1264,7 +1264,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1288,7 +1288,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1312,7 +1312,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1336,7 +1336,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1360,7 +1360,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1384,7 +1384,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1408,7 +1408,7 @@
                                     "w": 0.7071067
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1432,7 +1432,7 @@
                                     "w": 0.7071069
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1456,7 +1456,7 @@
                                     "w": -7.4505806E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1480,7 +1480,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1504,7 +1504,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1528,7 +1528,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1552,7 +1552,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1576,7 +1576,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1600,7 +1600,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1624,7 +1624,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1648,7 +1648,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1672,7 +1672,7 @@
                                     "w": 0.382683337
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1696,7 +1696,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1720,7 +1720,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1744,7 +1744,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1768,7 +1768,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1792,7 +1792,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1816,7 +1816,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1840,7 +1840,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1864,7 +1864,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1888,7 +1888,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1912,7 +1912,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1936,7 +1936,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1960,7 +1960,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -1984,7 +1984,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2008,7 +2008,7 @@
                                     "w": -0.701817334
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2032,7 +2032,7 @@
                                     "w": 0.70180887
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2056,7 +2056,7 @@
                                     "w": -0.701817334
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2080,7 +2080,7 @@
                                     "w": 0.70180887
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2104,7 +2104,7 @@
                                     "w": 0.70180887
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2128,7 +2128,7 @@
                                     "w": -0.7018089
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2152,7 +2152,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2176,7 +2176,7 @@
                                     "w": 0.7056204
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2200,7 +2200,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2224,7 +2224,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2248,7 +2248,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2272,7 +2272,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2296,7 +2296,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2320,7 +2320,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2344,7 +2344,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2368,7 +2368,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2392,7 +2392,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2416,7 +2416,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2440,7 +2440,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2464,7 +2464,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2488,7 +2488,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2512,7 +2512,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2536,7 +2536,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2560,7 +2560,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2584,7 +2584,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2608,7 +2608,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2632,7 +2632,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2656,7 +2656,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2680,7 +2680,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2704,7 +2704,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2728,7 +2728,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2752,7 +2752,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2776,7 +2776,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2800,7 +2800,7 @@
                                     "w": -7.003546E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2824,7 +2824,7 @@
                                     "w": -3.7252903E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2848,7 +2848,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2872,7 +2872,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2896,7 +2896,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2920,7 +2920,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2944,7 +2944,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2968,7 +2968,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -2992,7 +2992,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3016,7 +3016,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3040,7 +3040,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3064,7 +3064,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3088,7 +3088,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3112,7 +3112,7 @@
                                     "w": -3.7252903E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3136,7 +3136,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3160,7 +3160,7 @@
                                     "w": -3.7252903E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3184,7 +3184,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3208,7 +3208,7 @@
                                     "w": -0.70180887
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3232,7 +3232,7 @@
                                     "w": -0.70180887
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3256,7 +3256,7 @@
                                     "w": -0.70180887
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3280,7 +3280,7 @@
                                     "w": 0.70180887
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3304,7 +3304,7 @@
                                     "w": 0.70180887
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3328,7 +3328,7 @@
                                     "w": 0.70180887
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3352,7 +3352,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3376,7 +3376,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3400,7 +3400,7 @@
                                     "w": 1.1920929E-06
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3424,7 +3424,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3448,7 +3448,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3472,7 +3472,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3496,7 +3496,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3520,7 +3520,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3544,7 +3544,7 @@
                                     "w": 0.999497533
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3688,7 +3688,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3712,7 +3712,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3736,7 +3736,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3760,7 +3760,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3784,7 +3784,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3808,7 +3808,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3832,7 +3832,7 @@
                                     "w": 1.1920929E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3856,7 +3856,7 @@
                                     "w": -8.636713E-05
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3880,7 +3880,7 @@
                                     "w": -0.000120937824
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3904,7 +3904,7 @@
                                     "w": -4.6402216E-05
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3928,7 +3928,7 @@
                                     "w": 2.98023224E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3952,7 +3952,7 @@
                                     "w": -0.000120937824
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -3976,7 +3976,7 @@
                                     "w": 9.787083E-05
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4000,7 +4000,7 @@
                                     "w": -0.000120848432
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4024,7 +4024,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4048,7 +4048,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4072,7 +4072,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4096,7 +4096,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4120,7 +4120,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4144,7 +4144,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4168,7 +4168,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4192,7 +4192,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4216,7 +4216,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4240,7 +4240,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4264,7 +4264,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4288,7 +4288,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4312,7 +4312,7 @@
                                     "w": 0.7071068
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4336,7 +4336,7 @@
                                     "w": 0.7071069
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4360,7 +4360,7 @@
                                     "w": 1.00000012
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4456,7 +4456,7 @@
                                     "w": -0.3826836
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4480,7 +4480,7 @@
                                     "w": -3.090862E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4504,7 +4504,7 @@
                                     "w": -3.090862E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4696,7 +4696,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4720,7 +4720,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4744,7 +4744,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4768,7 +4768,7 @@
                                     "w": 0.7071067
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4792,7 +4792,7 @@
                                     "w": 0.7071067
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4816,7 +4816,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4840,7 +4840,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4864,7 +4864,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4888,7 +4888,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4912,7 +4912,7 @@
                                     "w": -3.7252903E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4936,7 +4936,7 @@
                                     "w": -3.7252903E-08
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4960,7 +4960,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -4984,7 +4984,7 @@
                                     "w": 0
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5008,7 +5008,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5704,7 +5704,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5728,7 +5728,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5752,7 +5752,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5776,7 +5776,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5800,7 +5800,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5824,7 +5824,7 @@
                                     "w": 0.99999994
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5848,7 +5848,7 @@
                                     "w": -2.06753612E-07
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5872,7 +5872,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5920,7 +5920,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5944,7 +5944,7 @@
                                     "w": 0.9999999
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5968,7 +5968,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -5992,7 +5992,7 @@
                                     "w": 0.7071067
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -6016,7 +6016,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -6040,7 +6040,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -6064,7 +6064,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -6088,7 +6088,7 @@
                                     "w": 0.999497533
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -6112,7 +6112,7 @@
                                     "w": 0.706751466
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -6136,7 +6136,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -6160,7 +6160,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -6184,7 +6184,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -6208,7 +6208,7 @@
                                     "w": 0.707106769
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         },
@@ -6232,7 +6232,7 @@
                                     "w": 1
                                 }
                             },
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_GroupIndex": 0,
                             "m_Probability": 100
                         }
@@ -6276,7 +6276,7 @@
                                 "z": 1
                             },
                             "m_Intensity": 1,
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_AnimationIndex": -1
                         },
                         {
@@ -6306,7 +6306,7 @@
                                 "z": 1
                             },
                             "m_Intensity": 1,
-                            "m_ParentMesh": 1000,
+                            "m_ParentMesh": -1,
                             "m_AnimationIndex": -1
                         },
                         {
@@ -6336,7 +6336,7 @@
                                 "z": 1
                             },
                             "m_Intensity": 1,
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_AnimationIndex": -1
                         },
                         {
@@ -6426,7 +6426,7 @@
                                 "z": 1
                             },
                             "m_Intensity": 1,
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_AnimationIndex": -1
                         },
                         {
@@ -6516,7 +6516,7 @@
                                 "z": 1
                             },
                             "m_Intensity": 1,
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_AnimationIndex": -1
                         },
                         {
@@ -6546,7 +6546,7 @@
                                 "z": 1
                             },
                             "m_Intensity": 1,
-                            "m_ParentMesh": 0,
+                            "m_ParentMesh": -1,
                             "m_AnimationIndex": -1
                         }
                     ]
@@ -9848,23 +9848,17 @@
                     "$rcontent": [
                     ]
                 }
-            },
-            {
-                "$id": 379,
-                "$type": "40|Game.Prefabs.EditorContainer, Game",
-                "name": "EditorContainer",
-                "active": true
             }
         ]
     },
     "m_Meshes": {
-        "$id": 380,
-        "$type": "41|Game.Prefabs.ObjectMeshInfo[], Game",
+        "$id": 379,
+        "$type": "40|Game.Prefabs.ObjectMeshInfo[], Game",
         "$rlength": 1,
         "$rcontent": [
             {
-                "$id": 381,
-                "$type": "42|Game.Prefabs.ObjectMeshInfo, Game",
+                "$id": 380,
+                "$type": "41|Game.Prefabs.ObjectMeshInfo, Game",
                 "m_Mesh": $fstrref:"UnityGUID:a9e19ba0746a3ba4f889d812e604e087",
                 "m_Position": {
                     "$type": 14,

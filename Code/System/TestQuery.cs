@@ -23,7 +23,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using Resources = Game.Economy.Resources;
 
-namespace IndustriesExtendedDLC.System
+namespace IndustriesExtended.System
 {
     public partial class TestQuery : GameSystemBase
     {

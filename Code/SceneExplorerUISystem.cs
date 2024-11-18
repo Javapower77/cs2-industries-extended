@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using IndustriesExtendedDLC.System;
+using IndustriesExtended.System;
 using Colossal.Serialization.Entities;
 using Colossal.UI;
 using Game;
@@ -13,9 +13,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static Colossal.IO.AssetDatabase.GeometryAsset;
 using Object = UnityEngine.Object;
-using static IndustriesExtendedDLC.ModSettings;
+using static IndustriesExtended.ModSettings;
 
-namespace IndustriesExtendedDLC
+namespace IndustriesExtended
 {
     public partial class SceneExplorerUISystem : UISystemBase
     {
@@ -38,7 +38,7 @@ namespace IndustriesExtendedDLC
         protected override void OnCreate()
         {
             base.OnCreate();
-            Logger.Info($"OnCreate in {nameof(IndustriesExtendedDLC)}");
+            Logger.Info($"OnCreate in {nameof(IndustriesExtended)}");
 
             _toggleExplorerAction = Mod.Settings.GetAction(KeyBindAction.ToggleToolAction);
 

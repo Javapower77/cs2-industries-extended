@@ -13,15 +13,15 @@ using Game.UI.Widgets;
 using Unity.Entities;
 using UnityEngine.Device;
 
-namespace IndustriesExtendedDLC
+namespace IndustriesExtended
 {
-    [FileLocation(nameof(IndustriesExtendedDLC))]
+    [FileLocation(nameof(IndustriesExtended))]
     [SettingsUITabOrder(GeneralTab, KeybindingsTab, AboutTab)]
     [SettingsUIGroupOrder(ExtractorsSection, ToolsSection, AboutSection)]
     [SettingsUIShowGroupName(ExtractorsSection, ToolsSection, AboutSection)]
     public partial class ModSettings : ModSetting
     {
-        internal const string SETTINGS_ASSET_NAME = "Industries Extended DLC General Settings";
+        internal const string SETTINGS_ASSET_NAME = "Industries Extended  General Settings";
         internal static ModSettings Instance { get; private set; }
 
         // Default values from the game
@@ -63,7 +63,7 @@ namespace IndustriesExtendedDLC
             {
                 try
                 {
-                    Application.OpenURL($"https://github.com/Javapower77/cs2-industries-extended-dlc/commit/{Mod.InformationalVersion.Split('+')[1]}");
+                    Application.OpenURL($"https://github.com/Javapower77/cs2-industries-extended-/commit/{Mod.InformationalVersion.Split('+')[1]}");
                 }
                 catch (Exception e)
                 {

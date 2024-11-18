@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Unity.Mathematics;
 
-namespace IndustriesExtendedDLC
+namespace IndustriesExtended
 {
     public class VanillaData
     {

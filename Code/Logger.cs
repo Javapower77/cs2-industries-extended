@@ -4,11 +4,11 @@ using System.Runtime.CompilerServices;
 using Colossal.Logging;
 
 
-namespace IndustriesExtendedDLC
+namespace IndustriesExtended
 {
     public static class Logger
     {
-        private static ILog _log = LogManager.GetLogger($"{nameof(IndustriesExtendedDLC)}.{nameof(Mod)}");
+        private static ILog _log = LogManager.GetLogger($"{nameof(IndustriesExtended)}.{nameof(Mod)}");
         public static DateTime nextLogTime = DateTime.MinValue;
 
         public static void Info(string message, [CallerMemberName] string methodName = null)

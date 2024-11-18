@@ -1,0 +1,239 @@
+{
+    "$id": 0,
+    "$type": "0|Game.Prefabs.BuildingExtensionPrefab, Game",
+    "name": "Cargo Train Station Boosted - Bypass Tracks Extension - (92499)",
+    "active": true,
+    "components": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
+        "$rlength": 7,
+        "$rcontent": [
+            {
+                "$id": 2,
+                "$type": "2|Game.Prefabs.ObjectSubNets, Game",
+                "name": "ObjectSubNets",
+                "active": true,
+                "m_InvertWhen": 0,
+                "m_SubNets": {
+                    "$id": 3,
+                    "$type": "3|Game.Prefabs.ObjectSubNetInfo[], Game",
+                    "$rlength": 2,
+                    "$rcontent": [
+                        {
+                            "$id": 4,
+                            "$type": "4|Game.Prefabs.ObjectSubNetInfo, Game",
+                            "m_NetPrefab": $fstrref:"UnityGUID:18bef9f7883fd2248b174c2b4abd7cb3",
+                            "m_BezierCurve": {
+                                "$type": "5|Colossal.Mathematics.Bezier4x3, Colossal.Mathematics",
+                                "a": {
+                                    "$type": "6|Unity.Mathematics.float3, Unity.Mathematics",
+                                    "x": -57.99997,
+                                    "y": 0,
+                                    "z": -61.6938629
+                                },
+                                "b": {
+                                    "$type": 6,
+                                    "x": -19.3333435,
+                                    "y": 0.000183105469,
+                                    "z": -61.69385
+                                },
+                                "c": {
+                                    "$type": 6,
+                                    "x": 19.333313,
+                                    "y": -9.15527344E-05,
+                                    "z": -61.6938934
+                                },
+                                "d": {
+                                    "$type": 6,
+                                    "x": 57.99994,
+                                    "y": 0,
+                                    "z": -61.6938858
+                                }
+                            },
+                            "m_NodeIndex": {
+                                "$type": "7|Unity.Mathematics.int2, Unity.Mathematics",
+                                "x": 14,
+                                "y": 15
+                            },
+                            "m_ParentMesh": {
+                                "$type": 7,
+                                "x": -1,
+                                "y": -1
+                            },
+                            "m_Upgrades": null
+                        },
+                        {
+                            "$id": 5,
+                            "$type": 4,
+                            "m_NetPrefab": $fstrref:"UnityGUID:5421f235787cfbc4b97b1585f520fd91",
+                            "m_BezierCurve": {
+                                "$type": 5,
+                                "a": {
+                                    "$type": 6,
+                                    "x": -57.99997,
+                                    "y": -0.0155334473,
+                                    "z": -72.0000153
+                                },
+                                "b": {
+                                    "$type": 6,
+                                    "x": -20,
+                                    "y": -0.010345459,
+                                    "z": -72.0000153
+                                },
+                                "c": {
+                                    "$type": 6,
+                                    "x": 18,
+                                    "y": -0.00518798828,
+                                    "z": -72.00001
+                                },
+                                "d": {
+                                    "$type": 6,
+                                    "x": 57.99997,
+                                    "y": 0,
+                                    "z": -72.0000153
+                                }
+                            },
+                            "m_NodeIndex": {
+                                "$type": 7,
+                                "x": 16,
+                                "y": 17
+                            },
+                            "m_ParentMesh": {
+                                "$type": 7,
+                                "x": 0,
+                                "y": -1
+                            },
+                            "m_Upgrades": null
+                        }
+                    ]
+                }
+            },
+            {
+                "$id": 6,
+                "$type": "8|Game.Prefabs.Pollution, Game",
+                "name": "Pollution",
+                "active": true,
+                "m_GroundPollution": 0,
+                "m_AirPollution": 0,
+                "m_NoisePollution": 3000,
+                "m_ScaleWithRenters": true
+            },
+            {
+                "$id": 7,
+                "$type": "9|Game.Prefabs.EditorAssetCategoryOverride, Game",
+                "name": "EditorAssetCategoryOverride",
+                "active": true,
+                "m_IncludeCategories": {
+                    "$id": 8,
+                    "$type": "10|System.String[], mscorlib",
+                    "$rlength": 1,
+                    "$rcontent": [
+                        "Javapower/Transport/CargoTrain"
+                    ]
+                },
+                "m_ExcludeCategories": {
+                    "$id": 9,
+                    "$type": 10,
+                    "$rlength": 0,
+                    "$rcontent": [
+                    ]
+                }
+            },
+            {
+                "$id": 10,
+                "$type": "11|Game.Prefabs.CityServiceBuilding, Game",
+                "name": "CityServiceBuilding",
+                "active": true,
+                "m_Upkeeps": {
+                    "$id": 11,
+                    "$type": "12|Game.Prefabs.ServiceUpkeepItem[], Game",
+                    "$rlength": 0,
+                    "$rcontent": [
+                    ]
+                }
+            },
+            {
+                "$id": 12,
+                "$type": "13|Game.Prefabs.ServiceConsumption, Game",
+                "name": "ServiceConsumption",
+                "active": true,
+                "m_Upkeep": 570,
+                "m_ElectricityConsumption": 0,
+                "m_WaterConsumption": 0,
+                "m_GarbageAccumulation": 0,
+                "m_TelecomNeed": 0
+            },
+            {
+                "$id": 13,
+                "$type": "14|Game.Prefabs.ServiceUpgrade, Game",
+                "name": "ServiceUpgrade",
+                "active": true,
+                "m_Buildings": {
+                    "$id": 14,
+                    "$type": "15|Game.Prefabs.BuildingPrefab[], Game",
+                    "$rlength": 1,
+                    "$rcontent": [
+                        $fstrref:"CID:693fd59051ca8559d12a8a010616ce80"
+                    ]
+                },
+                "m_UpgradeCost": 157000,
+                "m_XPReward": 265,
+                "m_MaxPlacementOffset": -1,
+                "m_MaxPlacementDistance": 0
+            },
+            {
+                "$id": 15,
+                "$type": "16|Game.Prefabs.UIObject, Game",
+                "name": "UIObject",
+                "active": true,
+                "m_Group": null,
+                "m_Priority": 6,
+                "m_Icon": "coui://javapower-industriesextended/CargoTrainStationTracksExt.png",
+                "m_IsDebugObject": false
+            }
+        ]
+    },
+    "m_Meshes": {
+        "$id": 16,
+        "$type": "17|Game.Prefabs.ObjectMeshInfo[], Game",
+        "$rlength": 1,
+        "$rcontent": [
+            {
+                "$id": 17,
+                "$type": "18|Game.Prefabs.ObjectMeshInfo, Game",
+                "m_Mesh": $fstrref:"UnityGUID:ec75990ce0ce2264d9c12ae8fdc2135d",
+                "m_Position": {
+                    "$type": 6,
+                    "x": 24.55,
+                    "y": 0,
+                    "z": -32.45
+                },
+                "m_Rotation": {
+                    "$type": "19|Unity.Mathematics.quaternion, Unity.Mathematics",
+                    "value": {
+                        "$type": "20|Unity.Mathematics.float4, Unity.Mathematics",
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    }
+                },
+                "m_RequireState": 0
+            }
+        ]
+    },
+    "m_Circular": false,
+    "m_ExternalLot": false,
+    "m_Position": {
+        "$type": 5,
+        "x": 0,
+        "y": 0,
+        "z": 0
+    },
+    "m_OverrideLotSize": {
+        "$type": "29|Unity.Mathematics.int2, Unity.Mathematics",
+        "x": 0,
+        "y": 0
+    },
+    "m_OverrideHeight": 0
+}

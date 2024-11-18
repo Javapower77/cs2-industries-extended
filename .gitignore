@@ -410,3 +410,4 @@ GlobalProperties.props
 # Asset Pack Creator settings 
 assetPackCreatorSettings.json
 [Aa]ssetPackCreator/*
+[Tt]emp/*

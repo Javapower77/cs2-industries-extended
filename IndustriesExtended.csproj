@@ -21,17 +21,17 @@
 
         <AdditionalFilesDirectory>Resources</AdditionalFilesDirectory>
 
-        <AssemblyVersion>1.17.0</AssemblyVersion>
+        <AssemblyVersion>1.18.0</AssemblyVersion>
 
-        <FileVersion>1.17.0</FileVersion>
+        <FileVersion>1.18.0</FileVersion>
 
-		<Version>1.17.0</Version>
+		<Version>1.18.0</Version>
 
         <NeutralLanguage>en</NeutralLanguage>
 
-        <RepositoryUrl>https://github.com/Javapower77/cs2-industries-extended-dlc</RepositoryUrl>
+        <RepositoryUrl>https://github.com/Javapower77/cs2-industries-extended-</RepositoryUrl>
 
-        <PackageProjectUrl>https://github.com/Javapower77/cs2-industries-extended-dlc</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/Javapower77/cs2-industries-extended-</PackageProjectUrl>
 
         <Copyright>(c) 2024, Javapower.</Copyright>
 
@@ -135,6 +135,10 @@
         <Generator>SettingsSingleFileGenerator</Generator>
         <LastGenOutput>Settings.Designer.cs</LastGenOutput>
       </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Remove="Temp\" />
     </ItemGroup>
 
     <Target Name="SetupAttributes" BeforeTargets="BeforeBuild">

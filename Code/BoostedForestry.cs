@@ -22,11 +22,11 @@ using Unity.Entities;
 using Game.Tools;
 using Colossal.Serialization.Entities;
 
-namespace IndustriesExtendedDLC
+namespace IndustriesExtended
 {
     public partial class BoostedForestry : GameSystemBase
     {
-        public static ILog log = LogManager.GetLogger($"{nameof(IndustriesExtendedDLC)}.{nameof(Mod)}").SetShowsErrorsInUI(false);
+        public static ILog log = LogManager.GetLogger($"{nameof(IndustriesExtended)}.{nameof(Mod)}").SetShowsErrorsInUI(false);
 
 
         protected override void OnCreate()

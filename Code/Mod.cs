@@ -18,19 +18,19 @@ using Colossal.IO.AssetDatabase;
 using System.Reflection;
 using Game.Areas;
 using Game.Serialization;
-using IndustriesExtendedDLC.System;
+using IndustriesExtended.System;
 using System.Linq;
-using static IndustriesExtendedDLC.ModSettings;
+using static IndustriesExtended.ModSettings;
 
 
-namespace IndustriesExtendedDLC
+namespace IndustriesExtended
 {
     public class Mod : IMod
     {
         // some extra info about this mod to show in the UI and/or the components in this mod code
-        public const string MOD_NAME = "Industries Extended DLC";        
+        public const string MOD_NAME = "Industries Extended";        
         public static string uiHostName = "javapower-industriesextended";
-        public static readonly string Id = "IndustriesExtendedDLC";
+        public static readonly string Id = "IndustriesExtended";
         public static string Author = "Javapower";
         public static string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString(4);
         public static string InformationalVersion => Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion;
@@ -58,7 +58,7 @@ namespace IndustriesExtendedDLC
             // Load all dictonary in English to apply in the objects of the mod
             GameManager.instance.localizationManager.AddSource("en-US", new LocaleEN(Settings));
             // Load the settings for the current mod
-            AssetDatabase.global.LoadSettings(nameof(IndustriesExtendedDLC), Settings, new ModSettings(this, false));
+            AssetDatabase.global.LoadSettings(nameof(IndustriesExtended), Settings, new ModSettings(this, false));
 
             // Try to fetch the mod asset from the mod manager
             if (GameManager.instance.modManager.TryGetExecutableAsset(this, out var asset))

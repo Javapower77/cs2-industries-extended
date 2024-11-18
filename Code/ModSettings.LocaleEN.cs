@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IndustriesExtendedDLC
+namespace IndustriesExtended
 {
     public partial class ModSettings : ModSetting
     {
@@ -50,7 +50,7 @@ namespace IndustriesExtendedDLC
                     { _setting.GetOptionGroupLocaleID(ModSettings.ToolsSection), "Tools" },
                     { _setting.GetOptionGroupLocaleID(ModSettings.AboutSection), "Mod Info" },
                     //Keybindings
-                    { _setting.GetBindingMapLocaleID(), "Industries Extended DLC Mod" },
+                    { _setting.GetBindingMapLocaleID(), "Industries Extended  Mod" },
                     { _setting.GetBindingKeyLocaleID(ModSettings.KeyBindAction.ToggleToolAction), "Apply Tool" },
                     //Labels
                     { _setting.GetOptionLabelLocaleID(nameof(ModSettings.ExtractorProductionEfficiency)), "Production efficiency" },
@@ -84,7 +84,7 @@ namespace IndustriesExtendedDLC
 
             public override string ToString()
             {
-                return "IndustriesExtendedDLC.Locale.en-US";
+                return "IndustriesExtended.Locale.en-US";
             }
         }
     }
