@@ -1,6 +1,4 @@
-## Patch 1.18
-* Remove all three Cargo Station assets.
-* Added all-in-on Cargo Station with upgrades for specificy industries.
-* Remove the word "DLC" from the name of the mod as suggested.
+## Patch 1.19
+* Fix name of the GitHub repo to remove "dlc" word.
 * Still not final version, working in adding more assets.
 	

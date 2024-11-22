@@ -43,18 +43,16 @@ I would like to thanks a lot for the patience on answering my question in order 
   <Screenshot Value="Code/Properties/Previews/Screenshot10.jpg" />
   <Tag Value="Code Mod" />
   <ForumLink Value="" />
-  <ModVersion Value="1.18.0" />
+  <ModVersion Value="1.19.0" />
   <GameVersion Value="1.1.11f1" />
   <Dependency Id="78903" />
   <Dependency Id="75426" />
   <!-- I18n EveryWhere -->
   <Dependency Id="79634" />
   <!-- Asset Icon Library -->
-  <ChangeLog>## Patch 1.18
-* Remove all three Cargo Station assets.
-* Added all-in-on Cargo Station with upgrades for specificy industries.
-* Remove the word "DLC" from the name of the mod as suggested.
+  <ChangeLog>## Patch 1.19
+* Fix name of the GitHub repo to remove "dlc" word.
 * Still not final version, working in adding more assets.</ChangeLog>
   <ExternalLink Type="discord" Url="https://discord.gg/UkKAfRqfCn" />
-  <ExternalLink Type="github" Url="https://github.com/Javapower77/cs2-industries-extended-" />
+  <ExternalLink Type="github" Url="https://github.com/Javapower77/cs2-industries-extended" />
 </Publish>

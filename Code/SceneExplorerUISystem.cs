@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using IndustriesExtended.System;
+using IndustriesExtended.Systems;
 using Colossal.Serialization.Entities;
 using Colossal.UI;
 using Game;

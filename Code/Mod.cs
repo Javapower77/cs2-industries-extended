@@ -18,7 +18,7 @@ using Colossal.IO.AssetDatabase;
 using System.Reflection;
 using Game.Areas;
 using Game.Serialization;
-using IndustriesExtended.System;
+using IndustriesExtended.Systems;
 using System.Linq;
 using static IndustriesExtended.ModSettings;
 
@@ -48,7 +48,7 @@ namespace IndustriesExtended
         public void OnLoad(UpdateSystem updateSystem)
         {
             // Log entry for debugging purposes
-            Logger.Info($"{nameof(OnLoad)}, version: {InformationalVersion}");
+                Logger.Info($"{nameof(OnLoad)}, version: {InformationalVersion}");
 
             // Register Key Binding and Settings UI
             Logger.Info("Registring Settings options in UI and keybindings");
@@ -71,8 +71,10 @@ namespace IndustriesExtended
 
             Settings.ApplyAndSave();
 
-            updateSystem.UpdateAt<SceneExplorerUISystem>(SystemUpdatePhase.UIUpdate);
-            updateSystem.UpdateAt<TestQuery>(SystemUpdatePhase.GameSimulation);
+
+            updateSystem.UpdateAt<TestFieldsUISystem>(SystemUpdatePhase.UIUpdate);
+            //updateSystem.UpdateAt<SceneExplorerUISystem>(SystemUpdatePhase.UIUpdate);
+            //updateSystem.UpdateAt<TestQuery>(SystemUpdatePhase.GameSimulation);
         }
 
         public void OnDispose()
