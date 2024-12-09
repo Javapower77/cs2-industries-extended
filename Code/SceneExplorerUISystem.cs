@@ -38,7 +38,7 @@ namespace IndustriesExtended
         protected override void OnCreate()
         {
             base.OnCreate();
-            Logger.Info($"OnCreate in {nameof(IndustriesExtended)}");
+            LogUtil.Info($"OnCreate in {nameof(IndustriesExtended)}");
 
             _toggleExplorerAction = Mod.Settings.GetAction(KeyBindAction.ToggleToolAction);
 

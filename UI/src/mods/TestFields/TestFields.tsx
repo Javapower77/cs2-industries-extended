@@ -52,7 +52,13 @@ export const TestFieldsComponent = (componentList: any): any => {
         return <InfoSection focusKey={VanillaComponentResolver.instance.FOCUS_DISABLED} disableFocus={true} className={InfoSectionTheme.infoSection}>
         <InfoRow 
             left={"campo1"}
-            right={"Hello World!"}
+            right=
+            {
+                <VanillaComponentResolver.instance.DataInputField
+                    value={"0.5"}
+                    className={VanillaComponentResolver.instance.TextInputTheme.input}
+                />
+            }
             tooltip={"Prueba tooltip"}
             uppercase={true}
             disableFocus={true}

@@ -46,9 +46,13 @@ namespace IndustriesExtended.Systems
         protected override void OnCreate()
         {
             base.OnCreate();
-            m_InfoUISystem.AddMiddleSection(this);
-            Logger.Info($"{nameof(TestFieldsUISystem)}.{nameof(OnCreate)}");
+            //m_InfoUISystem.AddMiddleSection(this);
+            LogUtil.Info($"{nameof(TestFieldsUISystem)}.{nameof(OnCreate)}");
+        }
 
+        protected override void OnUpdate()
+        {
+            base.visible = true;
         }
     }
 }

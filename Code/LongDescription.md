@@ -9,6 +9,7 @@ This mod would bring more assets and features to the game related to industries.
 * **Timber Factory:** Produces only Timber. Need a forestry area deployed to get woods.
 * **Furniture Factory:** Produces only Furniture. Need a Timber Factory to get the timber goods as an input.
 * **Paper Factory:** Produces only Paper. Need a Timber Factory to get the timber goods as an input.
+* **Convenience Food Factory:** Produce only Convenience Food. Need an agriculture area deploy to get livestock.
 * **Cargo Train Station Boosted:** A cargo train station that had a lot of storage and quickly loading cargo. It can be upgrade it with additional tracks, specific goods cargo, a park and a parking lot.
 
 ## NOTE
@@ -21,6 +22,7 @@ I would like to thanks a lot for the patience on answering my question in order 
 * StarQ / Qoushik
 * TDW
 * yenyang
+* Tigon Ologdring
 ... to mention some of them!
 
 ## DISCLAIMER

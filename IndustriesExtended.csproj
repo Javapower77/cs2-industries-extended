@@ -21,11 +21,11 @@
 
         <AdditionalFilesDirectory>Resources</AdditionalFilesDirectory>
 
-        <AssemblyVersion>1.19.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0</AssemblyVersion>
 
-        <FileVersion>1.19.0</FileVersion>
+        <FileVersion>1.23.0</FileVersion>
 
-		<Version>1.19.0</Version>
+		<Version>1.23.0</Version>
 
         <NeutralLanguage>en</NeutralLanguage>
 
@@ -156,11 +156,12 @@
       <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$(Version)" Query="//ModVersion/@Value" />
     </Target>
 
-	<!-- Automatically build the UI with the project. -->
+	<!-- Automatically build the UI with the project.
 	<Target Name="BuildUI" AfterTargets="AfterBuild">
 		<Exec Command="npm run build" WorkingDirectory="$(ProjectDir)/UI" />
 	</Target>
-
+    -->
+	
     <Target Name="GetAdditionalFiles" AfterTargets="DeployWIP">
         <ItemGroup>
             <AdditionalFilesToDeploy Include="$(AdditionalFilesDirectory)\**\*.*" />

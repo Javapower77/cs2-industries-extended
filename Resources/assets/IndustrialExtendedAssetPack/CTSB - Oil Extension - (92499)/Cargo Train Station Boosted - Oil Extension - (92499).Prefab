@@ -969,10 +969,14 @@
                 "m_Companies": {
                     "$id": 53,
                     "$type": "35|Game.Prefabs.CompanyPrefab[], Game",
-                    "$rlength": 2,
+                    "$rlength": 6,
                     "$rcontent": [
                         $fstrref:"UnityGUID:4e9c6bd24b1cd12438705e9482e43ad5",
-                        $fstrref:"UnityGUID:e327423c79ade1949aa14605f244ee6c"
+                        $fstrref:"UnityGUID:e327423c79ade1949aa14605f244ee6c",
+                        $fstrref:"UnityGUID:206c6142e93b640449463a99596e8a03",
+                        $fstrref:"UnityGUID:2338ae3094b55bf4a89a82102b6a35f8",
+                        $fstrref:"UnityGUID:51df33114e68a2845924afe098ab228d",
+                        $fstrref:"UnityGUID:c7b6a4c3656e61b40a4049e5255d7ac0"
                     ]
                 }
             }

@@ -25,6 +25,7 @@ I would like to thanks a lot for the patience on answering my question in order 
 * StarQ / Qoushik
 * TDW
 * yenyang
+* Tigon Ologdring
 ... to mention some of them!
 
 ## DISCLAIMER
@@ -43,15 +44,15 @@ I would like to thanks a lot for the patience on answering my question in order 
   <Screenshot Value="Code/Properties/Previews/Screenshot10.jpg" />
   <Tag Value="Code Mod" />
   <ForumLink Value="" />
-  <ModVersion Value="1.19.0" />
-  <GameVersion Value="1.1.11f1" />
+  <ModVersion Value="1.22.0" />
+  <GameVersion Value="1.1.12f1" />
   <Dependency Id="78903" />
   <Dependency Id="75426" />
   <!-- I18n EveryWhere -->
   <Dependency Id="79634" />
   <!-- Asset Icon Library -->
-  <ChangeLog>## Patch 1.19
-* Fix name of the GitHub repo to remove "dlc" word.
+  <ChangeLog>## Patch 1.22
+* Fixed an issue with long path in windows system that prevent assets to load properly in game.
 * Still not final version, working in adding more assets.</ChangeLog>
   <ExternalLink Type="discord" Url="https://discord.gg/UkKAfRqfCn" />
   <ExternalLink Type="github" Url="https://github.com/Javapower77/cs2-industries-extended" />

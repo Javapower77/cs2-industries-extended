@@ -6,7 +6,7 @@
     "components": {
         "$id": 1,
         "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
-        "$rlength": 13,
+        "$rlength": 14,
         "$rcontent": [
             {
                 "$id": 2,
@@ -9848,17 +9848,31 @@
                     "$rcontent": [
                     ]
                 }
+            },
+            {
+                "$id": 379,
+                "$type": "40|Game.Prefabs.AssetPackItem, Game",
+                "name": "AssetPackItem",
+                "active": true,
+                "m_Packs": {
+                    "$id": 380,
+                    "$type": "41|Game.Prefabs.AssetPackPrefab[], Game",
+                    "$rlength": 1,
+                    "$rcontent": [
+                        $fstrref:"CID:6f5fdf8c89b7725b6c47119144d3718d"
+                    ]
+                }
             }
         ]
     },
     "m_Meshes": {
-        "$id": 379,
-        "$type": "40|Game.Prefabs.ObjectMeshInfo[], Game",
+        "$id": 381,
+        "$type": "42|Game.Prefabs.ObjectMeshInfo[], Game",
         "$rlength": 1,
         "$rcontent": [
             {
-                "$id": 380,
-                "$type": "41|Game.Prefabs.ObjectMeshInfo, Game",
+                "$id": 382,
+                "$type": "43|Game.Prefabs.ObjectMeshInfo, Game",
                 "m_Mesh": $fstrref:"UnityGUID:a9e19ba0746a3ba4f889d812e604e087",
                 "m_Position": {
                     "$type": 14,

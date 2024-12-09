@@ -51,16 +51,30 @@ type PropsColorField = {
 
 type PropsFloatSliderField = {
     label?: string | null;
-    value?: string | null;
+    value?: any;
+    className?: string;
     min?: any;
     max?: any;
     fractionDigits?: any;
     tooltip?: ReactNode | null
     disabled?: boolean;
-    //onChange?: (e: Color) => void;
+    onChange?: (e: any) => void;
     onChangeStart?: (e: any) => void;
     onChangeEnd?: (e: any) => void;
 }
+
+type PropsDataInput = {
+    //idk what this should be named
+    value: any;
+    className?: string;
+    //valueFormatter: () => string;
+    //inputValidator: (text: string) => boolean;
+    //inputTransformer?: (text: string) => string;
+    //inputParser: (text: string, t: number, n: number) => any;
+    onChange?: (text: string) => void;
+    onFocus?: (e: any) => void;
+    onBlur?: (e: any) => void;
+};
 
 // This is an array of the different components and sass themes that are appropriate for your UI. You need to figure out which ones you need from the registry.
 const registryIndex = {
@@ -74,10 +88,14 @@ const registryIndex = {
     assetGridTheme: ["game-ui/game/components/asset-menu/asset-grid/asset-grid.module.scss", "classes"],  
     descriptionTooltipTheme: ["game-ui/common/tooltip/description-tooltip/description-tooltip.module.scss", "classes"],
     ColorField: ["game-ui/common/input/color-picker/color-field/color-field.tsx", 'ColorField'],
-    FloatSliderField: ["game-ui/editor/widgets/fields/number-slider-field.tsx", 'FloatSliderField'],
+    //FloatSliderField: ["game-ui/editor/widgets/fields/number-slider-field.tsx", 'FloatSliderField'],
+    //FloatSliderFieldTheme: ["game-ui/common/input/color-picker/component-input/component-input.module.scss", 'classes']
+    textInputTheme: ["game-ui/game/components/selected-info-panel/shared-components/text-input/text-input.module.scss", "classes"],
+    DataInput: ["game-ui/common/input/text/data-input.tsx", "DataInput"]
 }
 
 export class VanillaComponentResolver {
+    static VanillaComponentResolver: any;
     // As far as I know you should not need to edit this portion here. 
     // This was written by Klyte for his mod's UI but I didn't have to make any edits to it at all. 
     public static get instance(): VanillaComponentResolver { return this._instance!! }
@@ -101,13 +119,16 @@ export class VanillaComponentResolver {
     public get Section(): (props: PropsSection) => JSX.Element { return this.cachedData["Section"] ?? this.updateCache("Section") }
     public get ToolButton(): (props: PropsToolButton) => JSX.Element { return this.cachedData["ToolButton"] ?? this.updateCache("ToolButton") }
     public get ColorField(): (props: PropsColorField) => JSX.Element { return this.cachedData["ColorField"] ?? this.updateCache("ColorField") }
-    public get FloatSliderField(): (props: PropsFloatSliderField) => JSX.Element { return this.cachedData["FloatSliderField"] ?? this.updateCache("FloatSliderField") }
+    //public get FloatSliderField(): (props: PropsFloatSliderField) => JSX.Element { return this.cachedData["FloatSliderField"] ?? this.updateCache("FloatSliderField") }
+    public get DataInputField(): (props: PropsDataInput) => JSX.Element { return this.cachedData["DataInput"] ?? this.updateCache("DataInput") }
 
     public get toolButtonTheme(): Theme | any { return this.cachedData["toolButtonTheme"] ?? this.updateCache("toolButtonTheme") }
     public get mouseToolOptionsTheme(): Theme | any { return this.cachedData["mouseToolOptionsTheme"] ?? this.updateCache("mouseToolOptionsTheme") }
     public get assetGridTheme(): Theme | any { return this.cachedData["assetGridTheme"] ?? this.updateCache("assetGridTheme") }
     public get descriptionTooltipTheme(): Theme | any { return this.cachedData["descriptionTooltipTheme"] ?? this.updateCache("descriptionTooltipTheme") }
 
+    //public get FloatSliderFieldButtonTheme(): Theme | any { return this.cachedData["FloatSliderFieldTheme"] ?? this.updateCache("FloatSliderFieldTheme") }
+    public get TextInputTheme(): Theme | any { return this.cachedData["textInputTheme"] ?? this.updateCache("textInputTheme") }
 
     public get FOCUS_DISABLED(): UniqueFocusKey { return this.cachedData["FOCUS_DISABLED"] ?? this.updateCache("FOCUS_DISABLED") }
     public get FOCUS_AUTO(): UniqueFocusKey { return this.cachedData["FOCUS_AUTO"] ?? this.updateCache("FOCUS_AUTO") }

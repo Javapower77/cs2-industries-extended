@@ -1076,7 +1076,7 @@
                 "m_Companies": {
                     "$id": 57,
                     "$type": "35|Game.Prefabs.CompanyPrefab[], Game",
-                    "$rlength": 13,
+                    "$rlength": 25,
                     "$rcontent": [
                         $fstrref:"UnityGUID:fc1b10fd51a3b404b82b08526c42cd22",
                         $fstrref:"UnityGUID:f6bf134e65ac7bd4095a57ac1edcc599",
@@ -1090,7 +1090,19 @@
                         $fstrref:"UnityGUID:26b8933a042ef2e4a9b1ca842814bb10",
                         $fstrref:"UnityGUID:949f1c35fb2432940bfc7b5d0d36315d",
                         $fstrref:"UnityGUID:57f3c4e09b28fbd4faa0acd4973ca4d0",
-                        $fstrref:"UnityGUID:a0973dd7e7f756d4db72567f945f3a2a"
+                        $fstrref:"UnityGUID:a0973dd7e7f756d4db72567f945f3a2a",
+                        $fstrref:"UnityGUID:6a0a3d076afb29349993432f9410c763",
+                        $fstrref:"UnityGUID:fed3e1ce7913c1e41a139efd8ced3e75",
+                        $fstrref:"UnityGUID:9e7473ad80631444d942f5849ccd2d69",
+                        $fstrref:"UnityGUID:4fd198277ae72c744a8743a5ec35b7bd",
+                        $fstrref:"UnityGUID:4d327d0271977644eaa3e47e4dbe376e",
+                        $fstrref:"UnityGUID:9cb4ff7ade630ac4a8f778b31c32e3d7",
+                        $fstrref:"UnityGUID:9a5698c8b0e4f704b8123e92dbead300",
+                        $fstrref:"UnityGUID:dc869eee2079ccd4abc452b33d747903",
+                        $fstrref:"UnityGUID:651d476d5d80899479cd2419e2b62786",
+                        $fstrref:"UnityGUID:505508d3d77790f44a3bdc410ab887d5",
+                        $fstrref:"UnityGUID:7dbc4887e5fd66f42878e178fff651f5",
+                        $fstrref:"UnityGUID:c21ff32926d69b74db07a8b7e43ba2cf"
                     ]
                 }
             }

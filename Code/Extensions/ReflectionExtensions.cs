@@ -25,7 +25,7 @@ namespace IndustriesExtended.Extensions
             var memInf = GetMemberInfo(obj, memberName);
             if (memInf == null)
             {
-                Logger.Error($"{nameof(ReflectionExtensions)} {nameof(GetMemberInfo)} Couldn't find member name! ");
+                LogUtil.Error($"{nameof(ReflectionExtensions)} {nameof(GetMemberInfo)} Couldn't find member name! ");
             }
 
             if (memInf is PropertyInfo)
@@ -54,7 +54,7 @@ namespace IndustriesExtended.Extensions
             var memInf = GetMemberInfo(obj, memberName);
             if (memInf == null)
             {
-                Logger.Error($"{nameof(ReflectionExtensions)} {nameof(GetMemberInfo)} Couldn't find member name! ");
+                LogUtil.Error($"{nameof(ReflectionExtensions)} {nameof(GetMemberInfo)} Couldn't find member name! ");
             }
 
             var oldValue = obj.GetMemberValue(memberName);
