@@ -6,7 +6,7 @@
     "components": {
         "$id": 1,
         "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
-        "$rlength": 8,
+        "$rlength": 9,
         "$rcontent": [
             {
                 "$id": 2,
@@ -163,12 +163,26 @@
                 "name": "SelectedSound",
                 "active": true,
                 "m_SelectedSound": $fstrref:"UnityGUID:e56b77208dd68f54fbe6f589ef1c14ee"
+            },
+            {
+                "$id": 20,
+                "$type": "18|Game.Prefabs.AssetPackItem, Game",
+                "name": "AssetPackItem",
+                "active": true,
+                "m_Packs": {
+                    "$id": 21,
+                    "$type": "19|Game.Prefabs.AssetPackPrefab[], Game",
+                    "$rlength": 1,
+                    "$rcontent": [
+                        $fstrref:"CID:6f5fdf8c89b7725b6c47119144d3718d"
+                    ]
+                }
             }
         ]
     },
     "m_Meshes": {
-        "$id": 20,
-        "$type": "18|Game.Prefabs.ObjectMeshInfo[], Game",
+        "$id": 22,
+        "$type": "20|Game.Prefabs.ObjectMeshInfo[], Game",
         "$rlength": 0,
         "$rcontent": [
         ]

@@ -18,34 +18,29 @@
 
         <!--The file where mod information which is required for publishing mod on PDX mods are stored-->
         <PublishConfigurationPath>Code\Properties\PublishConfiguration.xml</PublishConfigurationPath>
-
+        
+		<!-- Others configurations -->
         <AdditionalFilesDirectory>Resources</AdditionalFilesDirectory>
-
-        <AssemblyVersion>1.18.0</AssemblyVersion>
-
-        <FileVersion>1.18.0</FileVersion>
-
-		<Version>1.18.0</Version>
-
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		
+		<!-- Mod information -->
+        <AssemblyVersion>1.24.0</AssemblyVersion>
+        <FileVersion>1.24.0</FileVersion>
+		<Version>1.24.0</Version>
         <NeutralLanguage>en</NeutralLanguage>
-
-        <RepositoryUrl>https://github.com/Javapower77/cs2-industries-extended-</RepositoryUrl>
-
-        <PackageProjectUrl>https://github.com/Javapower77/cs2-industries-extended-</PackageProjectUrl>
-
+        <RepositoryUrl>https://github.com/Javapower77/cs2-industries-extended</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Javapower77/cs2-industries-extended</PackageProjectUrl>
         <Copyright>(c) 2024, Javapower.</Copyright>
-
-        <Product>Industries Extende Mod for Cities Skyline 2</Product>
-
+        <Product>Industries Extended Mod for Cities Skyline 2</Product>
         <Authors>Javapower</Authors>
-
         <Company>Javapower, Inc.</Company>
     </PropertyGroup>
     
     <!--Imports must be after PropertyGroup block-->
     <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.props" />
     <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.targets" />
-    <ItemGroup>
+    
+	<ItemGroup>
       <Compile Remove="Resources\assets\ExamplePack\**" />
       <EmbeddedResource Remove="Resources\assets\ExamplePack\**" />
       <None Remove="Resources\assets\ExamplePack\**" />
@@ -58,8 +53,17 @@
         <Reference Include="Colossal.Localization">
 			<Private>false</Private>
         </Reference>
+        <Reference Include="Colossal.Mathematics">
+          <HintPath>..\..\..\..\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.Mathematics.dll</HintPath>
+        </Reference>
+        <Reference Include="Colossal.PSI.Common">
+          <HintPath>..\..\..\..\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.PSI.Common.dll</HintPath>
+        </Reference>
         <Reference Include="Colossal.UI">
 			<Private>false</Private>
+        </Reference>
+        <Reference Include="Colossal.UI.Binding">
+          <HintPath>..\..\..\..\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.UI.Binding.dll</HintPath>
         </Reference>
         <Reference Include="Game">
             <Private>false</Private>
@@ -147,6 +151,11 @@
       <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$(Version)" Query="//ModVersion/@Value" />
     </Target>
 
+	<!-- Automatically build the UI with the project.  -->
+	<Target Name="BuildUI" AfterTargets="AfterBuild">
+		<Exec Command="npm run build" WorkingDirectory="$(ProjectDir)/UI" />
+	</Target>
+	
     <Target Name="GetAdditionalFiles" AfterTargets="DeployWIP">
         <ItemGroup>
             <AdditionalFilesToDeploy Include="$(AdditionalFilesDirectory)\**\*.*" />

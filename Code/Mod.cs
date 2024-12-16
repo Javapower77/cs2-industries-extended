@@ -18,9 +18,12 @@ using Colossal.IO.AssetDatabase;
 using System.Reflection;
 using Game.Areas;
 using Game.Serialization;
-using IndustriesExtended.System;
+using IndustriesExtended.Systems;
 using System.Linq;
 using static IndustriesExtended.ModSettings;
+using Game.UI.InGame;
+using Unity.Entities;
+using System;
 
 
 namespace IndustriesExtended
@@ -48,37 +51,68 @@ namespace IndustriesExtended
         public void OnLoad(UpdateSystem updateSystem)
         {
             // Log entry for debugging purposes
-            Logger.Info($"{nameof(OnLoad)}, version: {InformationalVersion}");
+            LogUtil.Info($"{nameof(Mod)}.{nameof(OnLoad)}, version:{InformationalVersion}");
 
-            // Register Key Binding and Settings UI
-            Logger.Info("Registring Settings options in UI and keybindings");
-            Settings = new ModSettings(this, false);
-            Settings.RegisterKeyBindings();
-            Settings.RegisterInOptionsUI();
-            // Load all dictonary in English to apply in the objects of the mod
-            GameManager.instance.localizationManager.AddSource("en-US", new LocaleEN(Settings));
-            // Load the settings for the current mod
-            AssetDatabase.global.LoadSettings(nameof(IndustriesExtended), Settings, new ModSettings(this, false));
-
-            // Try to fetch the mod asset from the mod manager
-            if (GameManager.instance.modManager.TryGetExecutableAsset(this, out var asset))
+            try
             {
-                ModPath = Path.GetDirectoryName(asset.path);
-                // Set the thumbnails location for the assets inside the mod
-                UIManager.defaultUISystem.AddHostLocation(uiHostName, Path.Combine(Path.GetDirectoryName(asset.path), "thumbs"), false);
-                Logger.Info($"Current mod asset at {asset.path}");
+                // Register Key Binding and Settings UI
+                LogUtil.Info("Registring Settings options in UI and keybindings");
+                Settings = new ModSettings(this, false);
+                Settings.RegisterKeyBindings();
+                Settings.RegisterInOptionsUI();
+                
+                // Load all dictonary in English to apply in the objects of the mod
+                GameManager.instance.localizationManager.AddSource("en-US", new LocaleEN(Settings));
+                
+                // Load the settings for the current mod
+                AssetDatabase.global.LoadSettings(nameof(IndustriesExtended), Settings, new ModSettings(this, false));
+
+                Settings.ApplyAndSave();
+
+                // Try to fetch the mod asset from the mod manager
+                if (GameManager.instance.modManager.TryGetExecutableAsset(this, out var asset))
+                {
+                    ModPath = Path.GetDirectoryName(asset.path);
+                    // Set the thumbnails location for the assets inside the mod
+                    UIManager.defaultUISystem.AddHostLocation(uiHostName, Path.Combine(Path.GetDirectoryName(asset.path), "thumbs"), false);
+                    LogUtil.Info($"Current mod asset at {asset.path}");
+                }
+                else
+                {
+                    LogUtil.Error("Unable to get mod executable asset.");
+                    return;
+                }
+
+                //updateSystem.UpdateAt<TestFieldsUISystem>(SystemUpdatePhase.UIUpdate);
+
+                //World.DefaultGameObjectInjectionWorld.GetOrCreateSystemManaged<SelectedInfoUISystem>().AddMiddleSection(
+                //    World.DefaultGameObjectInjectionWorld.GetOrCreateSystemManaged<TestFieldsUISystem>()
+                //);
+
+
+                updateSystem.UpdateAt<SceneExplorerUISystem>(SystemUpdatePhase.UIUpdate);
+                updateSystem.UpdateAt<TestQuery>(SystemUpdatePhase.GameSimulation);
+                updateSystem.UpdateAt<TestIndustrialStuff>(SystemUpdatePhase.GameSimulation);
+
+                updateSystem.UpdateBefore<TestFieldsUISystem>(SystemUpdatePhase.Rendering);
+                updateSystem.UpdateBefore<StorageFieldsUISystem>(SystemUpdatePhase.Rendering);
+                
+                
+
+ //               World.DefaultGameObjectInjectionWorld.GetOrCreateSystemManaged<SelectedInfoUISystem>().AddMiddleSection(
+ //                   World.DefaultGameObjectInjectionWorld.GetOrCreateSystemManaged<TestFieldsUISystem>()
+ //                );
             }
-
-            Settings.ApplyAndSave();
-
-            updateSystem.UpdateAt<SceneExplorerUISystem>(SystemUpdatePhase.UIUpdate);
-            updateSystem.UpdateAt<TestQuery>(SystemUpdatePhase.GameSimulation);
+            catch (Exception ex)
+            {
+                LogUtil.Exception(ex);
+            }
         }
 
         public void OnDispose()
         {
             UIManager.defaultUISystem.RemoveHostLocation(uiHostName);
-            Logger.Info(nameof(OnDispose));
+            LogUtil.Info($"{nameof(Mod)}.{nameof(OnDispose)}");
             Settings?.UnregisterInOptionsUI();
             Settings = null;
         }
