@@ -92,6 +92,16 @@ namespace IndustriesExtended
 
                 updateSystem.UpdateAt<SceneExplorerUISystem>(SystemUpdatePhase.UIUpdate);
                 updateSystem.UpdateAt<TestQuery>(SystemUpdatePhase.GameSimulation);
+                updateSystem.UpdateAt<TestIndustrialStuff>(SystemUpdatePhase.GameSimulation);
+
+                updateSystem.UpdateBefore<TestFieldsUISystem>(SystemUpdatePhase.Rendering);
+                updateSystem.UpdateBefore<StorageFieldsUISystem>(SystemUpdatePhase.Rendering);
+                
+                
+
+ //               World.DefaultGameObjectInjectionWorld.GetOrCreateSystemManaged<SelectedInfoUISystem>().AddMiddleSection(
+ //                   World.DefaultGameObjectInjectionWorld.GetOrCreateSystemManaged<TestFieldsUISystem>()
+ //                );
             }
             catch (Exception ex)
             {

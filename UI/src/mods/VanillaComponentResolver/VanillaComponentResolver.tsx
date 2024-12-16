@@ -76,6 +76,26 @@ type PropsDataInput = {
     onBlur?: (e: any) => void;
 };
 
+type PropsFloatTextField = {
+    min?: any;
+    max?: any;
+    fractionDigits?: any;
+    value: any;
+    className?: string;
+}
+
+type PropsLabelTextField = {
+    displayName?: any;
+    level?: any;
+    tooltip?: any;
+}
+
+type PropsStorageSectionField = {
+    stored?: any;
+    capacity?: any;
+    resources?: any;
+}
+
 // This is an array of the different components and sass themes that are appropriate for your UI. You need to figure out which ones you need from the registry.
 const registryIndex = {
     Section: ["game-ui/game/components/tool-options/mouse-tool-options/mouse-tool-options.tsx", "Section"],
@@ -91,7 +111,13 @@ const registryIndex = {
     //FloatSliderField: ["game-ui/editor/widgets/fields/number-slider-field.tsx", 'FloatSliderField'],
     //FloatSliderFieldTheme: ["game-ui/common/input/color-picker/component-input/component-input.module.scss", 'classes']
     textInputTheme: ["game-ui/game/components/selected-info-panel/shared-components/text-input/text-input.module.scss", "classes"],
-    DataInput: ["game-ui/common/input/text/data-input.tsx", "DataInput"]
+    DataInput: ["game-ui/common/input/text/data-input.tsx", "DataInput"],
+    FloatTextInput: ["game-ui/common/input/text/float-input.tsx", "FloatInput"],
+    floatTextInputTheme: ["game-ui/common/input/text/ellipsis-text-input/themes/default.module.scss", "classes"],
+    labelTheme: ["game-ui/menu/widgets/label/label.module.scss", "classes"],
+    labelText: ["game-ui/menu/widgets/label/Label.tsx", "Label"]
+    //StorageSection: ["game-ui/game/components/selected-info-panel/selected-info-sections/building-sections/storage-section.tsx", "StorageSection"],
+    //StorageSectionTheme: ["game-ui/game/components/selected-info-panel/shared-components/resource-item/resource-item.module.scss", "classes"]
 }
 
 export class VanillaComponentResolver {
@@ -121,6 +147,13 @@ export class VanillaComponentResolver {
     public get ColorField(): (props: PropsColorField) => JSX.Element { return this.cachedData["ColorField"] ?? this.updateCache("ColorField") }
     //public get FloatSliderField(): (props: PropsFloatSliderField) => JSX.Element { return this.cachedData["FloatSliderField"] ?? this.updateCache("FloatSliderField") }
     public get DataInputField(): (props: PropsDataInput) => JSX.Element { return this.cachedData["DataInput"] ?? this.updateCache("DataInput") }
+    public get FloatInputField(): (props: PropsFloatTextField) => JSX.Element { return this.cachedData["FloatTextInput"] ?? this.updateCache("FloatTextInput") }
+
+    public get LabelTextField(): (props: PropsLabelTextField) => JSX.Element { return this.cachedData["labelText"] ?? this.updateCache("labelText") }
+
+    //public get StorageSectionField(): (props: PropsStorageSectionField) => JSX.Element { return this.cachedData["StorageSection"] ?? this.updateCache("StorageSection") }
+
+
 
     public get toolButtonTheme(): Theme | any { return this.cachedData["toolButtonTheme"] ?? this.updateCache("toolButtonTheme") }
     public get mouseToolOptionsTheme(): Theme | any { return this.cachedData["mouseToolOptionsTheme"] ?? this.updateCache("mouseToolOptionsTheme") }
@@ -129,7 +162,10 @@ export class VanillaComponentResolver {
 
     //public get FloatSliderFieldButtonTheme(): Theme | any { return this.cachedData["FloatSliderFieldTheme"] ?? this.updateCache("FloatSliderFieldTheme") }
     public get TextInputTheme(): Theme | any { return this.cachedData["textInputTheme"] ?? this.updateCache("textInputTheme") }
-
+    public get FloatTextInputTheme(): Theme | any { return this.cachedData["floatTextInputTheme"] ?? this.updateCache("floatTextInputTheme") }
+    public get LabelTheme(): Theme | any { return this.cachedData["labelTheme"] ?? this.updateCache("labelTheme") }
+    //public get StorageSectionTheme(): Theme | any { return this.cachedData["StorageSectionTheme"] ?? this.updateCache("StorageSectionTheme") }
+    
     public get FOCUS_DISABLED(): UniqueFocusKey { return this.cachedData["FOCUS_DISABLED"] ?? this.updateCache("FOCUS_DISABLED") }
     public get FOCUS_AUTO(): UniqueFocusKey { return this.cachedData["FOCUS_AUTO"] ?? this.updateCache("FOCUS_AUTO") }
     public get useUniqueFocusKey(): (focusKey: FocusKey, debugName: string) => UniqueFocusKey | null { return this.cachedData["useUniqueFocusKey"] ?? this.updateCache("useUniqueFocusKey") }

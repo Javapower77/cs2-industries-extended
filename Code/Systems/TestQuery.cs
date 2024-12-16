@@ -135,7 +135,7 @@ namespace IndustriesExtended.Systems
                 {
                     //data8.m_Resources = Game.Economy.Resource;
                     // data9.m_Input1 = ;
-                    data9.m_IsImport = (byte)data9.m_IsImport;
+                    //data9.m_IsImport = (byte)data9.m_IsImport;
                     data9.m_MaxWorkersPerCell = (float)data9.m_MaxWorkersPerCell + 0;
                     //data9.m_Output;
                     data9.m_WorkPerUnit = (int)data9.m_WorkPerUnit + 0;
@@ -228,9 +228,8 @@ namespace IndustriesExtended.Systems
                         int y = 0;
                         //data111[0].m_Amount = (int)data111[0].m_Amount + 0;
 
-                        Resources _resources = data111[0];
-                        _resources.m_Amount = 0;
-                        
+                        //Resources _resources = data111[0];
+                        //_resources.m_Amount = 0;  
                     }
 
                 }

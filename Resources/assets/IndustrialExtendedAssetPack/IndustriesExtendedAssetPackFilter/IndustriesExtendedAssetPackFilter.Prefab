@@ -8,16 +8,16 @@
         "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
         "$rlength": 2,
         "$rcontent": [
-            {
-                "$id": 2,
-                "$type": "2|Game.Prefabs.UIObject, Game",
-                "name": "UIObject",
-                "active": true,
-                "m_Group": null,
-                "m_Priority": 5999201,
-                "m_Icon": "assetdb://Global/42924554dbd2004a19cf599931d87a24",
-                "m_IsDebugObject": false
-            },
+          {
+            "$id": 2,
+            "$type": "2|Game.Prefabs.UIObject, Game",
+            "name": "UIObject",
+            "active": true,
+            "m_Group": null,
+            "m_Priority": 5999201,
+            "m_Icon": "coui://javapower-industriesextended/IndustriesExtendedPackFilter.png",
+            "m_IsDebugObject": false
+          },
             {
                 "$id": 3,
                 "$type": "3|Game.Prefabs.EditorAssetCategoryOverride, Game",

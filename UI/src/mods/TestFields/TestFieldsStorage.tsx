@@ -5,10 +5,13 @@ import { useLocalization } from "cs2/l10n";
 import { VanillaComponentResolver } from "mods/VanillaComponentResolver/VanillaComponentResolver";
 import mod from "../../../mod.json";
 
-interface InfoSectionComponent {
+interface StorageSectionComponent {
 	group: string;
-	tooltipKeys: Array<string>;
-	tooltipTags: Array<string>;
+    tooltipKeys: Array<string>;
+    tooltipTags: Array<string>;
+    stored: any;
+    capacity: any;
+    resources: Array<object>;
 }
 
 const InfoSectionTheme: Theme | any = getModule(
@@ -30,6 +33,12 @@ const InfoRow: any = getModule(
     "game-ui/game/components/selected-info-panel/shared-components/info-row/info-row.tsx",
     "InfoRow"
 )
+
+const StorageSection: any = getModule(
+    "game-ui/game/components/selected-info-panel/selected-info-sections/building-sections/storage-section.tsx",
+    "StorageSection"
+)
+
 
 function handleClick(eventName : string) {
     // This triggers an event on C# side and C# designates the method to implement.
@@ -55,33 +64,25 @@ function DescriptionTooltip(tooltipTitle: string | null, tooltipDescription: str
 const IsBoostedFactory$ = bindValue<string>(mod.id, "IsBoostedFactory");
 const GoodProduction$ = bindValue<string>(mod.id, "GoodProduction");
 
-export const TestFieldsComponent = (componentList: any): any => {
-    componentList["IndustriesExtended.Systems.TestFieldsUISystem"] = (e: InfoSectionComponent) => {
+export const TestStorageSectionComponent = (componentList: any): any => {
+    componentList["IndustriesExtended.Systems.StorageFieldsUISystem"] = (e: StorageSectionComponent) => {
         const IsBoostedFactory = useValue(IsBoostedFactory$);
         const GoodProduction = useValue(GoodProduction$);
         const GoodRes: GoodResources[] = [{
             key: "ConvenienceFood",
             amount: GoodProduction,
         }]
-
-        return <InfoSection focusKey={VanillaComponentResolver.instance.FOCUS_DISABLED} disableFocus={true} className={InfoSectionTheme.infoSection}>
-            <InfoRow
-                left={
-                    <>
-                        {IsBoostedFactory && ("Production Ongoing")}
-                    </>
-                }
-                right={""}                
-                tooltip={""}
-                uppercase={true}
-                disableFocus={true}
-                subRow={false}
-                className={InfoRowTheme.infoRow}
-            ></InfoRow>
-                </InfoSection>
-				;        
+        
+        return <StorageSection
+            stored={GoodProduction}
+            capacity={4000}
+            resources={GoodRes}>         
+        </StorageSection>
+                    ;        
     }
-    console.log(mod.id + " :UI: [testfields.tsx]:: Adding new fields to the InfoSection Panel.");
-    console.log(mod.id + " :UI: [testfields.tsx]:: componentList -> " + componentList["IndustriesExtended.Systems.TestFieldsUISystem"]);
+
+    //console.log(mod.id + " :UI: TestStorageSectionComponent :: GoodRes->" + GoodRes[0] + ", GoodProduction->" + GoodProduction);
+    console.log(mod.id + " :UI: [testfieldsstorage.tsx]:: Adding new fields to the Storage Panel.");
+    console.log(mod.id + " :UI: [testfieldsstorage.tsx]:: componentList -> " + componentList["IndustriesExtended.Systems.StorageFieldsUISystem"]);
     return componentList as any;
 }

@@ -18,34 +18,29 @@
 
         <!--The file where mod information which is required for publishing mod on PDX mods are stored-->
         <PublishConfigurationPath>Code\Properties\PublishConfiguration.xml</PublishConfigurationPath>
-
+        
+		<!-- Others configurations -->
         <AdditionalFilesDirectory>Resources</AdditionalFilesDirectory>
-
-        <AssemblyVersion>1.23.0</AssemblyVersion>
-
-        <FileVersion>1.23.0</FileVersion>
-
-		<Version>1.23.0</Version>
-
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		
+		<!-- Mod information -->
+        <AssemblyVersion>1.24.0</AssemblyVersion>
+        <FileVersion>1.24.0</FileVersion>
+		<Version>1.24.0</Version>
         <NeutralLanguage>en</NeutralLanguage>
-
         <RepositoryUrl>https://github.com/Javapower77/cs2-industries-extended</RepositoryUrl>
-
         <PackageProjectUrl>https://github.com/Javapower77/cs2-industries-extended</PackageProjectUrl>
-
         <Copyright>(c) 2024, Javapower.</Copyright>
-
         <Product>Industries Extended Mod for Cities Skyline 2</Product>
-
         <Authors>Javapower</Authors>
-
         <Company>Javapower, Inc.</Company>
     </PropertyGroup>
     
     <!--Imports must be after PropertyGroup block-->
     <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.props" />
     <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.targets" />
-    <ItemGroup>
+    
+	<ItemGroup>
       <Compile Remove="Resources\assets\ExamplePack\**" />
       <EmbeddedResource Remove="Resources\assets\ExamplePack\**" />
       <None Remove="Resources\assets\ExamplePack\**" />
@@ -156,11 +151,10 @@
       <XmlPoke XmlInputPath="$(PublishConfigurationPath)" Value="$(Version)" Query="//ModVersion/@Value" />
     </Target>
 
-	<!-- Automatically build the UI with the project.
+	<!-- Automatically build the UI with the project.  -->
 	<Target Name="BuildUI" AfterTargets="AfterBuild">
 		<Exec Command="npm run build" WorkingDirectory="$(ProjectDir)/UI" />
 	</Target>
-    -->
 	
     <Target Name="GetAdditionalFiles" AfterTargets="DeployWIP">
         <ItemGroup>

@@ -37,7 +37,7 @@ using Game.Reflection;
 
 namespace IndustriesExtended.Systems
 {
-    public partial class TestFieldsUISystem : ExtendedInfoSectionBase
+    public partial class StorageFieldsUISystem : ExtendedInfoSectionBase
     {
         protected override string group => Mod.Id;
         private ToolSystem toolSystem;
@@ -45,7 +45,7 @@ namespace IndustriesExtended.Systems
         private ValueBindingHelper<string> m_CurrentFactoryPrefab;
         private ValueBindingHelper<bool> m_IsBoostedFactory;
         private ValueBindingHelper<int> m_GoodProduction;
-        private ValueBindingHelper<int> m_ResourceIndex;        
+        private ValueBindingHelper<int> m_ResourceIndex;
         private PrefabBase _currentPrefab;
         private PrefabSystem _prefabSystem;
         private SimulationSystem m_SimulationSystem;
@@ -67,7 +67,7 @@ namespace IndustriesExtended.Systems
         {
             base.OnCreate();
             m_InfoUISystem.AddMiddleSection(this);
-            LogUtil.Info($"{nameof(TestFieldsUISystem)}.{nameof(OnCreate)}");
+            LogUtil.Info($"{nameof(StorageFieldsUISystem)}.{nameof(OnCreate)}");
 
             m_CurrentFactoryPrefab = CreateBinding("CurrentFactoryPrefab", "");
             m_IsBoostedFactory = CreateBinding("IsBoostedFactory", false);
@@ -106,7 +106,7 @@ namespace IndustriesExtended.Systems
                 {
                     for (int i = 0; i < _resources.Length; i++)
                     {
-                        if(_resources[i].m_Resource == Game.Economy.Resource.ConvenienceFood)
+                        if (_resources[i].m_Resource == Game.Economy.Resource.ConvenienceFood)
                         {
                             m_GoodProduction.Value = _resources[i].m_Amount;
                         }
@@ -118,7 +118,7 @@ namespace IndustriesExtended.Systems
                 m_SimulationSystem = base.World.GetOrCreateSystemManaged<SimulationSystem>();
                 World.GetExistingSystemManaged<TestIndustrialStuff>().GetStuff();
             }
-            
+
             base.visible = true;
         }
 
